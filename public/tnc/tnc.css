@@ -1,0 +1,63 @@
+/* 
+.page-header.page-header-small {
+    min-height: 100vh;
+    max-height: 440px;
+    background: rgba(00,00,00,.5);
+}
+
+.page-header-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+}
+
+.icon-white,
+.section-image .info-title {
+    color: #FFFFFF !important;
+} */
+
+.footer-qr {
+    width: 250px;
+    z-index: 9999;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-image: url('./images/background.png');
+    background-size: cover;
+    background-color: #000000;
+    border-radius: 8px;
+    border: 1px solid #333333;
+}
+
+.contactus-2 .card-contact {
+    max-width: 700px !important;
+}
+
+.card-green {
+    background-color: #002319;
+    border-radius: 8px;
+}
+
+.tablePad {
+    margin: 15px 0px;
+}
+
+tr.sub-table-row > td {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+}

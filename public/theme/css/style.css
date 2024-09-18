@@ -1,0 +1,56 @@
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* MODAL */
+.modal-background-image {
+    position: relative; /* Ensure this is set to make the ::before positioned relative to this element */
+    /* Other styles as needed */
+    background: #000000;
+    z-index: -1; /* Adjust as necessary to ensure correct stacking */
+
+}
+
+.modal-background-image::before {
+    content: ""; /* Required for the pseudo-element to show */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.70); /* Semi-transparent black background */
+    z-index: 0; /* Adjust as necessary to ensure correct stacking */
+}
+
+.modal-content-area {
+    z-index: 1; /* Adjust as necessary to ensure correct stacking */
+}
+
+.marquee-container {
+    overflow: hidden;
+}
+
+.marquee {
+    display: flex;
+    animation: scrollMarquee 20s linear infinite;
+}
+
+
+@keyframes scrollMarquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
