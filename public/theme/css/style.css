@@ -1,3 +1,22 @@
+
+.mainHeader{
+    background:#3a414a;
+}
+.mainHeader .heading{
+    color:#e3c4c5 !important;
+}
+.mainHeader ul a {
+    color:#e3c4c5;
+}
+.mainHeader .startBtn {
+    background:#e3c4c5;
+    
+}
+.mainFooter {
+    background:#3a414a;
+}
+
+
 .loader {
     border: 5px solid #f3f3f3;
     border-top: 5px solid #3498db;

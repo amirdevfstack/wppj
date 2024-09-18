@@ -17,7 +17,7 @@
     $og_description = OpenGraphAdmin::get_opengraph_info_by_slug('og-description');
     $og_site_name = OpenGraphAdmin::get_opengraph_info_by_slug('og-site-name');
     $og_locale = OpenGraphAdmin::get_opengraph_info_by_slug('og-locale');
-?>
+?> 
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -83,9 +83,12 @@
 </head>
 
 <body <?php body_class('landing-page'); ?>>
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
-        <div class="container">
-            <div class="navbar-translate">
+
+    <nav class="navbar navbar-expand-lg mainHeader fixed-top">
+   
+            <div class="container">
+                <div class="navbar-translate">
+                <h4 class="m-0 heading d-lg-none">AMPLIFY 528</h4>
                 <a class="navbar-brand" href="<?php echo home_url('/'); ?>" rel="tooltip" title=""
                     data-placement="bottom" data-original-title="<?php $business_name = BusinessAdmin::get_business_info_by_slug('business-name');
                     if (!empty ($business_name)) {
@@ -118,18 +121,28 @@
                 );
                 ?>
                 <?php if (is_user_logged_in() && current_user_can('administrator')): ?>
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <?php
-                            if (!empty ($operating_hours)) {
-                                echo '<text class="nav-link text-warning">'.esc_html($operating_hours).'</text>';
-                            } 
-                        ?>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="<?php echo admin_url(); ?>">Admin</a>
-                        </li>
-                    </ul>
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-lg-6 d-flex justify-content-start align-items-center">
+                                    <h4 class="p-0 m-0 heading" >AMPLIFY 528</h4>
+                                </div>
+                    
+                                <div class="col-lg-6">
+                                    <ul class="nav d-flex justify-content-end align-items-center">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">LOGIN</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="btn py-1 text-dark startBtn" href="#">START NOW</a>
+                                        </li>
+                                        <!-- <li class="nav-item pl-3">
+                                           
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                 <?php endif; ?>
             </div>
         </div>
