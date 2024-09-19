@@ -1,4 +1,39 @@
 
+/* signup page  */
+
+.singUpContainer .roundedPill{
+    border-radius: 14px;
+}
+
+.singUpContainer form input::placeholder {
+    color: black !important;
+}
+.singUpContainer .form-check-sign::before{
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid gray !important;
+    border-radius: 6px !important;
+}
+.singUpContainer .form-check-sign::after{
+    left: -3px !important;
+}
+.singUpContainer .form-check-label {
+    line-height: 19px !important;
+}
+
+.signupIcon i, .footerIcon i {
+    font-size: 24px;
+  }
+.signupIcon a:hover, .footerIcon a:hover {
+    text-decoration: none !important;
+  }
+
+
+
+
+
+
+
 .mainHeader{
     background:#3a414a;
 }

@@ -79,6 +79,8 @@
     <?php wp_head(); ?>
     <link href="<?php echo get_template_directory_uri(); ?>/public/theme/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri(); ?>/public/theme/css/demo.css" rel="stylesheet" />
+    <link href="<?php echo get_template_directory_uri(); ?>/public/theme/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     
 </head>
 
@@ -121,16 +123,16 @@
                 );
                 ?>
                 <?php if (is_user_logged_in() && current_user_can('administrator')): ?>
-                        <div class="container ">
+                        <div class="container pt-lg-0 pt-md-3 pt-sm-3 pt-3">
                             <div class="row">
-                                <div class="col-lg-6 d-flex justify-content-start align-items-center">
+                                <div class="col-lg-6 d-flex justify-content-start  align-items-center">
                                     <h4 class="p-0 m-0 heading" >AMPLIFY 528</h4>
                                 </div>
                     
                                 <div class="col-lg-6">
-                                    <ul class="nav d-flex justify-content-end align-items-center">
+                                    <ul class="nav d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-end align-items-lg-center align-items-md-start align-items-sm-start align-items-start">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">LOGIN</a>
+                                            <a class="nav-link px-lg-3 px-md-0 px-sm-0 px-0" href="#">LOGIN</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="btn py-1 text-dark startBtn" href="#">START NOW</a>
