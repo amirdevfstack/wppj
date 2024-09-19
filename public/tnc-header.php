@@ -132,7 +132,7 @@
                                 <div class="col-lg-6">
                                     <ul class="nav d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-end align-items-lg-center align-items-md-start align-items-sm-start align-items-start">
                                         <li class="nav-item">
-                                            <a class="nav-link px-lg-3 px-md-0 px-sm-0 px-0" href="#">LOGIN</a>
+                                            <a class="nav-link px-lg-2 px-md-0 px-sm-0 px-0" href="#">LOGIN</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="btn py-1 text-dark startBtn" href="#">START NOW</a>
