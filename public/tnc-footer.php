@@ -3,7 +3,7 @@
 <!-- Footer -->
 
 
-<div class="mainFooter py-5">
+<div class="mainFooter py-5 padding-common">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">

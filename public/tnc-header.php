@@ -86,9 +86,9 @@
 
 <body <?php body_class('landing-page'); ?>>
 
-    <nav class="navbar navbar-expand-lg mainHeader fixed-top">
+    <nav class="navbar navbar-expand-lg mainHeader fixed-top padding-common">
    
-            <div class="container">
+            <div class="container px-0"> 
                 <div class="navbar-translate">
                 <h4 class="m-0 heading d-lg-none">AMPLIFY 528</h4>
                 <a class="navbar-brand" href="<?php echo home_url('/'); ?>" rel="tooltip" title=""
@@ -122,11 +122,10 @@
                     )
                 );
                 ?>
-                <?php if (is_user_logged_in() && current_user_can('administrator')): ?>
-                        <div class="container pt-lg-0 pt-md-3 pt-sm-3 pt-3">
+                        <div class="container pt-lg-0 pt-md-3 pt-sm-3 pt-3 px-2">
                             <div class="row">
-                                <div class="col-lg-6 d-flex justify-content-start  align-items-center">
-                                    <h4 class="p-0 m-0 heading" >AMPLIFY 528</h4>
+                                <div class="col-lg-6 d-flex justify-content-start  align-items-center pl-0">
+                                    <h4 class="px-3 m-0 heading" >AMPLIFY 528</h4>
                                 </div>
                     
                                 <div class="col-lg-6">
@@ -145,7 +144,6 @@
                             </div>
                         </div>
 
-                <?php endif; ?>
             </div>
         </div>
     </nav>

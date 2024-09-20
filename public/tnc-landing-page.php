@@ -6,222 +6,290 @@
  */
 
 include get_theme_file_path('/public/tnc-header.php');
-$header_data = HeaderAdmin::get_header_data();
-$header_bg_image = isset($header_data['header_bg_image']) ? $header_data['header_bg_image'] : '';
-$footer_data = FooterAdmin::get_footer_data();
-$footer_bg_image_url = isset($footer_data['footer_bg_image']) ? esc_url($footer_data['footer_bg_image']) : '';
-$business_logo_long = BusinessAdmin::get_business_info_by_slug('business-logo-long');
-$business_logo_short = BusinessAdmin::get_business_info_by_slug('business-logo-short');
-$header_logo_long = isset($header_data['header_image_show_long']) ? $header_data['header_image_show_long'] : '';
-$header_logo_short = isset($header_data['header_image_show_short']) ? $header_data['header_image_show_short'] : '';
-$business_name = BusinessAdmin::get_business_info_by_slug('business-name');
-$business_logo_long = BusinessAdmin::get_business_info_by_slug('business-logo-long');
-$business_logo_short = BusinessAdmin::get_business_info_by_slug('business-logo-short');
-$address = BusinessAdmin::get_business_info_by_slug('address');
-$street = BusinessAdmin::get_business_info_by_slug('street');
-$street2 = BusinessAdmin::get_business_info_by_slug('street2');
-$city = BusinessAdmin::get_business_info_by_slug('city');
-$state = BusinessAdmin::get_business_info_by_slug('state');
-$postal_code = BusinessAdmin::get_business_info_by_slug('postal-code');
-$country = BusinessAdmin::get_business_info_by_slug('country');
-$latitude = BusinessAdmin::get_business_info_by_slug('latitude');
-$longitude = BusinessAdmin::get_business_info_by_slug('longitude');
-$phone_number = BusinessAdmin::get_business_info_by_slug('phone-number');
-$email = BusinessAdmin::get_business_info_by_slug('email');
-$license_number = BusinessAdmin::get_business_info_by_slug('license-number');
-$facebook_url = SocialAdmin::get_social_info_by_slug('facebook-url');
-$instagram_url = SocialAdmin::get_social_info_by_slug('instagram-url');
-$twitter_url = SocialAdmin::get_social_info_by_slug('twitter-url');
-$tiktok_url = SocialAdmin::get_social_info_by_slug('tiktok-url');
-$yelp_url = SocialAdmin::get_social_info_by_slug('yelp-url');
-$google_url = SocialAdmin::get_social_info_by_slug('google-url');
-$article_active = AboutAdmin::get_business_about_by_slug('article-active');
-$article_title = AboutAdmin::get_business_about_by_slug('article-title');
-$article_sub_title = AboutAdmin::get_business_about_by_slug('article-sub-title');
-$article_quote = AboutAdmin::get_business_about_by_slug('article-quote');
-$article_heading = AboutAdmin::get_business_about_by_slug('article-heading');
-$article_body = AboutAdmin::get_business_about_by_slug('article-body');
-$footer_title = AboutAdmin::get_business_about_by_slug('footer-title');
-$footer_body = AboutAdmin::get_business_about_by_slug('footer-body');
-$address_active = BusinessAdmin::get_business_info_by_slug('address-active');
-$phone_active = BusinessAdmin::get_business_info_by_slug('phone-active');
 
-$card_data = array();
-for ($i = 1; $i <= 3; $i++) {
-    $card_data[$i] = HeaderAdmin::get_card_data($i);
-}
 
 ?>
-<div class="wrapper">
-    <!-- Custom Content for the Front Page -->
-    <div class="page-header page-header-large d-none d-md-block">
-        <div class="page-header-image" data-parallax="true"
-            style=" background-image: url('<?= $header_bg_image; ?>') ;  ">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<style>
+    .firstHomeContainer, .loveWithAndWithOut, .featuredSpeakerImage, .downloadAppSection {
+        background-image:url("https://www.picsum.photos/100/100");
+        /* background-image:url("<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg"); */
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<main class="wrapper" style=" margin-top:50px;">
+
+    <section class="firstHomeContainer padding-common">
+        <div class="container">
+            <div class="row pb-4">
+
+                <div class="col-lg-6 px-0 d-flex flex-column justify-content-end">
+                    <h4 class="m-0">Love is Contagious</h4>
+                    <h4 class="font-weight-bold my-0">Love is Infectious</h4>
+                    <div class="mt-4">
+                        <a href="" class="btn py-1 text-dark startBtn border border-dark">START NOW</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0 d-flex flex-column align-items-end">
+                    <div class="">
+                        <div class="font-weight-bold text-secondary mb-2">Next Event</div>
+                        <!-- <video width="320" height="240" controls autoplay muted>
+                            <source src="<?php echo get_template_directory_uri() ?>/public/theme/videos/video.mp4" >
+                        </video> -->
+                        <video class="" src="<?php echo get_template_directory_uri() ?>/public/theme/videos/video.mp4" controls muted width="500">
+                        </video>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-        <div class="page-header-image" data-parallax="true"></div>
-        <div class="content-center">
-            <?php
-            if ($header_logo_short == "1") {
+    </section>
 
+    <section class="paginationContainer padding-10 mx-2 py-4">
+        <div class="container p-0">
+            <div class="row p-0">
+                <div class="col-lg-6">
+                    <span>Events with a <span class="font-weight-bold">purpose</span>...</span>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <a href="" class="text-info font-weight-bold mr-3"><< prev</a>
+                    <a href="" class="text-info font-weight-bold mx-1">1</a>
+                    <a href="" class="text-info font-weight-bold mx-1">2</a>
+                    <a href="" class="text-info font-weight-bold mx-1">3</a>
+                    <a href="" class="text-info font-weight-bold mx-1">4</a>
+                    <a href="" class="text-info font-weight-bold mx-1">5</a>
+                    <a href="" class="text-info font-weight-bold mx-1">6</a>
+                    <a href="" class="text-info font-weight-bold mx-1">7</a>
+                    <a href="" class="text-info font-weight-bold mx-1">8</a>
+                    <a href="" class="text-info font-weight-bold mx-1">9</a>
+                    <a href="" class="text-info font-weight-bold mx-1">10</a>
+                    <a href="" class="text-info font-weight-bold ml-3">next >></a>
+                </div>
+            </div>
 
-                ?> <img style="height: 350px; widht: auto;" src="<?php
-                 if (!empty($business_logo_short)) {
-                     echo esc_html($business_logo_short);
-                 } ?>" />
+        </div>
+    </section>
 
-                <?php
-            }
-            if ($header_logo_long == "1") {
+    <section class="homePageSlider padding-10">
+        <div class="container p-0">
+            <div class="slickSlider">
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 1">
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 2">
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 3">
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 4">
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 5">
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 6">
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 6">
+                </div>
+            </div>
+        </div>
 
+    </section>
 
-                ?>
-                <img style="margin: 15px 0px;" src="<?php
-                if (!empty($business_logo_long)) {
-                    echo esc_html($business_logo_long);
-                } ?>" />
-                <?php
-            }
-            ?>
-            <ul class="nav nav-pills nav-pills-success justify-content-center" style="padding-bottom:25px;"
-                role="tablist">
-                <?php if ($address_active == true) { ?>
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#personal" role="tablist">
-                            <?php $business_address = BusinessAdmin::get_business_info_by_slug('address');
-                            if (!empty($business_address)) {
-                                echo esc_html($business_address);
-                            } ?>
-                        </a>
-                    </li>
-                <?php } ?>
-                <?php if ($phone_active == true) { ?>
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="tel:+ <?php
-                        if (!empty($phone_number)) {
-                            echo esc_html($phone_number);
-                        } ?>" role="tablist">
-                            <?php
-                            if (!empty($phone_number)) {
-                                echo esc_html($phone_number);
-                            } ?>
-                        </a>
-                    </li>
-                <?php } ?>
-            </ul>
+    <section class="featuredSection padding-common marginTop">
+        <div class="container p-0">
             <div class="row">
-                <?php foreach ($card_data as $card_number => $card): ?>
-                    <div class="col-md-4">
-                        <div class="card card-background card-raised" data-background-color=""
-                            style="background-image: url('<?php echo $card['bg_image']; ?>')">
-                            <div class="info">
-                                <div class="icon icon-white">
-                                    <?php if (!empty($card['icon_class'])): ?>
-                                        <i class="<?php echo $card['icon_class']; ?>"></i>
-                                    <?php endif; ?>
-                                </div>
-                                <div class="description">
-                                    <h4 class="info-title"><?php echo $card['title']; ?></h4>
-                                    <p><?php echo $card['text']; ?></p>
-                                    <a type="submit" class="btn btn-success btn-round ml-3"
-                                        href="<?php echo $card['link']; ?>"><?php echo $card['btn_text']; ?></a>
-                                </div>
-                            </div>
+                <div class="col-lg-6">
+                    <h3 class="text-secondary font-weight-bold mb-2">Feature Section</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
+                    <div class="mt-5">
+                        <h3 class="m-0">Love is Contagious</h3>
+                        <h3 class="font-weight-bold my-0">Love is Infectious</h3>
+                        <div class="mt-4">
+                            <a href="" class="btn py-1 text-dark startBtn border border-dark">START NOW</a>
                         </div>
                     </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </div>
-    <div class="row d-block d-md-none" style="background-color: #2c2c2c;">
-        <img class="m-auto" style="padding: 80px 25px 20px;" src="<?php
-        if (!empty($business_logo_long)) {
-            echo esc_attr($business_logo_long);
-        } ?>" />
-    </div>
-    <div class="section">
-        <?php
-        // Start the loop.
-        while (have_posts()):
-            the_post();
-            ?>
-
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <header class="entry-header">
-                    <?php the_title('<h3 class="title">', '</h1>'); ?>
-                </header><!-- .entry-header -->
-
-                <div class="entry-content">
-                    <?php
-                    // Display the content.
-                    the_content();
-                    ?>
-                </div><!-- .entry-content -->
-
-            </article><!-- #post-<?php the_ID(); ?> -->
-
-            <?php
-            // End the loop.
-        endwhile;
-        ?>
-    </div>
-    <div class="testimonials-1 section-image"
-        style="background-image: url('<?= $footer_bg_image_url; ?>')">
-        <div class="features-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">
-                            <?php
-                            if (!empty ($footer_title)) {
-                                echo esc_html($footer_title);
-                            } ?>
-                        </h2>
-                        <h4 class="description">
-                            <?php
-                            if (!empty ($footer_body)) {
-                                echo esc_html($footer_body);
-                            } ?>
-                        </h4>
+                    <div class="mt-4">
+                        <img src="<?php echo get_template_directory_uri() ?>/public/theme/images/featureLogo.png" alt="">
                     </div>
                 </div>
-                <div class="row">
-                    <?php
-                    for ($i = 1; $i <= 3; $i++) {
-                        $card_data = FooterAdmin::get_card_data($i);
-                        $image_url = isset($card_data['bg_image']) ? $card_data['bg_image'] : '';
-                        $icon_class = isset($card_data['icon_class']) ? $card_data['icon_class'] : '';
-                        $title = isset($card_data['title']) ? $card_data['title'] : '';
-                        $footer_text = isset($card_data['text']) ? $card_data['text'] : '';
-                        $link = isset($card_data['link']) ? $card_data['link'] : '';
-                        $button_text = isset($card_data['btn_text']) ? $card_data['btn_text'] : '';
-                        ?>
-                        <div class="col-md-4">
-                            <div class="card card-background card-raised" data-background-color=""
-                                style="background-image: url('<?php echo esc_url($image_url); ?>')">
-                                <div class="info">
-                                    <div class="icon icon-white">
-                                        <i class="<?php echo esc_attr($icon_class); ?>"></i>
-                                    </div>
-                                    <div class="description">
-                                        <h4 class="info-title text-white"><?php echo esc_html($title); ?></h4>
-                                        <p class="text-white"><?php echo $footer_text; ?></p>
-                                        <a  class="btn btn-success btn-round ml-3" href="<?php echo $link; ?>"><?php echo esc_html($button_text); ?></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <?php } ?>
+                <div class="col-lg-6">
+                    <div class="featuredImage">
+                        <img src="https://www.picsum.photos/100/100" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
+
+    <section class="loveWithAndWithOut padding-common marginTop">
+        <div class="">
+            <h3 class="font-weight-bold text-secondary m-0 text-center">Love Within</h3>
+            <h2 class="font-weight-bold m-0 text-center">Love Without</h2>
+            <div class="mt-4 text-center">
+                <a href="" class="btn py-1 text-dark startBtn rounded border border-dark">START NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featuredSpeakerSection py-5 padding-common">
+        <div class="container p-0">
+            <div class="row p-0">
+                <div class="col-lg-5">
+                    <div class="featuredSpeakerImage p-2 rounded">
+                        <div class="featuredContent">
+                            <h4 class="mb-1 mt-0">Featured Quote</h4>
+                            <p class="">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <h2 class="text-white font-weight-bold mb-2">Featured Speaker</h2>
+                    <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
+                    <div class="mt-4">
+                        <a href="" class="btn py-1 text-dark startBtn rounded border border-dark">START NOW</a>
+                    </div>
+                    <div class="cardContainer">
+                        <div class="cardBox">
+                            <img class="rounded" src="https://www.picsum.photos/100/100" alt="">
+                            <h6 class="text-white text-center mt-1">Person Name</h6>
+                        </div>
+                        <div class="cardBox">
+                            <img class="rounded" src="https://www.picsum.photos/100/100" alt="">
+                            <h6 class="text-white text-center mt-1">Person Name</h6>
+                        </div>
+                        <div class="cardBox">
+                            <img class="rounded" src="https://www.picsum.photos/100/100" alt="">
+                            <h6 class="text-white text-center mt-1">Person Name</h6>
+                        </div>
+                        <div class="cardBox">
+                            <img class="rounded" src="https://www.picsum.photos/100/100" alt="">
+                            <h6 class="text-white text-center mt-1">Person Name</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="paginationContainer padding-10 mx-2">
+        <div class="container p-0 py-4">
+            <div class="row p-0">
+                <div class="col-lg-6">
+                    <span>Latest featured <span class="font-weight-bold">posts</span>...</span>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <a href="" class="text-info font-weight-bold mr-3"><< prev</a>
+                    <a href="" class="text-info font-weight-bold mx-1">1</a>
+                    <a href="" class="text-info font-weight-bold mx-1">2</a>
+                    <a href="" class="text-info font-weight-bold mx-1">3</a>
+                    <a href="" class="text-info font-weight-bold mx-1">4</a>
+                    <a href="" class="text-info font-weight-bold mx-1">5</a>
+                    <a href="" class="text-info font-weight-bold mx-1">6</a>
+                    <a href="" class="text-info font-weight-bold mx-1">7</a>
+                    <a href="" class="text-info font-weight-bold mx-1">8</a>
+                    <a href="" class="text-info font-weight-bold mx-1">9</a>
+                    <a href="" class="text-info font-weight-bold mx-1">10</a>
+                    <a href="" class="text-info font-weight-bold ml-3">next >></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="homePageSlider padding-10">
+        <div class="container p-0">
+            <div class="slickSliderPost">
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 1">
+                    <h6 class="text-center text-secondary mt-2">Post Title</h6>
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 2">
+                    <h6 class="text-center text-secondary mt-2">Post Title</h6>
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 3">
+                    <h6 class="text-center text-secondary mt-2">Post Title</h6>
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 4">
+                    <h6 class="text-center text-secondary mt-2">Post Title</h6>
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 5">
+                    <h6 class="text-center text-secondary mt-2">Post Title</h6>
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 6">
+                    <h6 class="text-center text-secondary mt-2">Post Title</h6>
+                </div>
+                <div class="mx-2">
+                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 6">
+                    <h6 class="text-center text-secondary mt-2">Post Title</h6>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="downloadAppSection py-5 mt-4 padding-common">
+        <div class="container p-0">
+            <div class="row p-0">
+                <div class="col-lg-6 offset-lg-1 d-flex align-items-center">
+                    <div class="">
+                        <h1 class="mt-0 mb-2 font-weight-bold">Download the App...</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
+                        <div class="mt-4">
+                            <a href="" class="btn py-1 text-dark startBtn rounded border border-dark">START NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img style="width:70%; border-radius:50px;" class="" src="<?php echo get_template_directory_uri() ?>/public/theme/images/mobileImage.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
 
 <?php
 
 include get_theme_file_path('/public/tnc-footer.php');
 
 ?>
-<script type="application/ld+json">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Slick Slider JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slickSlider').slick({
+            slidesToShow: 6,  
+            slidesToScroll: 1, 
+            dots: true,       
+            infinite: true,   
+            autoplay: false,
+            arrows: false      
+        });
+    });
+    $(document).ready(function(){
+        $('.slickSliderPost').slick({
+            slidesToShow: 6,  
+            slidesToScroll: 1, 
+            dots: false,       
+            infinite: true,   
+            autoplay: false,
+            arrows: false      
+        });
+    });
 </script>

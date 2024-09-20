@@ -30,6 +30,83 @@
 
 
 
+/* Home Page  */
+
+
+.firstHomeContainer .startBtn, .featuredSection .startBtn, .loveWithAndWithOut .startBtn, .featuredSpeakerSection .startBtn, .downloadAppSection .startBtn {
+    background:#e3c4c5;
+}
+.firstHomeContainer .row{
+    padding-top: 300px;
+}
+.homePageSlider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.homePageSlider .slick-dots {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.homePageSlider .slick-dots::before, 
+.homePageSlider .slick-dots::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 0;
+    height: 1px;
+    width: 300px;
+    background-color: #333;
+    transform:translate(-50%);
+}
+.homePageSlider .slick-dots::before {
+    top: 0px;
+}
+.homePageSlider .slick-dots::after {
+    bottom: 0px;
+}
+.featuredSection .featuredImage img{
+    width:100%;
+    height: 600px;
+}
+.loveWithAndWithOut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 250px !important;
+}
+.featuredSpeakerSection{
+    background:#3a414a;
+}
+.cardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 150px;
+  }
+  .cardContainer .cardBox img {
+    width: 100%;
+  }
+  .cardContainer .cardBox {
+    margin-left: 14px;
+    flex-basis: 17%;
+  }
+  .cardContainer .cardBox h6 {
+    font-size: 11px;
+  }
+  .featuredSpeakerImage {
+    height: 100%;
+    position: relative;
+  }
+  .featuredSpeakerImage .featuredContent {
+    position: absolute;
+    bottom: 0;
+  }
+
+
 
 
 
@@ -106,5 +183,42 @@
     }
     100% {
         transform: translateX(-50%);
+    }
+}
+.height-100vh {
+    min-height: 100vh;
+}
+
+.padding-common {
+    padding-inline: 60px !important;
+}
+.padding-10{
+    padding-inline: 10px !important;
+}
+.marginTop{
+    margin-top: 80px;
+}
+
+@media (min-width:991px){
+    .marginRight {
+        margin-right: 200px !important;
+      }
+
+}
+
+@media (max-width:991px) {
+    .signupCol {
+        margin-inline:auto;
+    }
+    .padding-common {
+        padding-inline: 30px !important;
+    }
+    .padding-10{
+        padding-inline: 10px !important;
+    }
+}
+@media(min-width: 1200px){
+    .container{
+        max-width: 1920px;
     }
 }
