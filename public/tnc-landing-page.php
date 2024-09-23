@@ -26,20 +26,17 @@ include get_theme_file_path('/public/tnc-header.php');
         <div class="container">
             <div class="row pb-4">
 
-                <div class="col-lg-6 px-0 d-flex flex-column justify-content-end">
+                <div class="col-md-6 px-0 d-flex flex-column justify-content-end align-items-lg-start align-items-md-start align-items-sm-center align-items-center">
                     <h4 class="m-0">Love is Contagious</h4>
                     <h4 class="font-weight-bold my-0">Love is Infectious</h4>
                     <div class="mt-4">
                         <a href="" class="btn py-1 text-dark startBtn border border-dark">START NOW</a>
                     </div>
                 </div>
-                <div class="col-lg-6 px-0 d-flex flex-column align-items-end">
-                    <div class="">
+                <div class="col-md-6 px-0 d-flex flex-column align-items-end">
+                    <div class="mt-lg-0 mt-md-0 mt-sm-3 mt-3">
                         <div class="font-weight-bold text-secondary mb-2">Next Event</div>
-                        <!-- <video width="320" height="240" controls autoplay muted>
-                            <source src="<?php echo get_template_directory_uri() ?>/public/theme/videos/video.mp4" >
-                        </video> -->
-                        <video class="" src="<?php echo get_template_directory_uri() ?>/public/theme/videos/video.mp4" controls muted width="500">
+                        <video class="videoPlay" src="<?php echo get_template_directory_uri() ?>/public/theme/videos/video.mp4" controls muted>
                         </video>
                     </div>
 
@@ -49,13 +46,13 @@ include get_theme_file_path('/public/tnc-header.php');
         </div>
     </section>
 
-    <section class="paginationContainer padding-10 mx-2 py-4">
-        <div class="container p-0">
+    <section class="paginationContainer padding-10 py-4">
+        <div class="container px-2">
             <div class="row p-0">
-                <div class="col-lg-6">
+                <div class="col-md-6 text-lg-left text-md-left text-sm-center text-center">
                     <span>Events with a <span class="font-weight-bold">purpose</span>...</span>
                 </div>
-                <div class="col-lg-6 text-right">
+                <div class="col-md-6 text-lg-right text-md-right text-sm-center text-center mt-lg-0 mt-md-0 mt-sm-2 mt-2">
                     <a href="" class="text-info font-weight-bold mr-3"><< prev</a>
                     <a href="" class="text-info font-weight-bold mx-1">1</a>
                     <a href="" class="text-info font-weight-bold mx-1">2</a>
@@ -106,13 +103,13 @@ include get_theme_file_path('/public/tnc-header.php');
     <section class="featuredSection padding-common marginTop">
         <div class="container p-0">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-6 order-lg-1 order-md-1 order-sm-2 order-2 mt-lg-0 mt-md-3 mt-sm-3 mt-3">
                     <h3 class="text-secondary font-weight-bold mb-2">Feature Section</h3>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
-                    <div class="mt-5">
+                    <div class="mt-md-5">
                         <h3 class="m-0">Love is Contagious</h3>
                         <h3 class="font-weight-bold my-0">Love is Infectious</h3>
-                        <div class="mt-4">
+                        <div class="mt-md-4">
                             <a href="" class="btn py-1 text-dark startBtn border border-dark">START NOW</a>
                         </div>
                     </div>
@@ -120,7 +117,7 @@ include get_theme_file_path('/public/tnc-header.php');
                         <img src="<?php echo get_template_directory_uri() ?>/public/theme/images/featureLogo.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6 order-lg-2 order-md-2 order-sm-1 order-1">
                     <div class="featuredImage">
                         <img src="https://www.picsum.photos/100/100" alt="">
                     </div>
@@ -142,7 +139,7 @@ include get_theme_file_path('/public/tnc-header.php');
     <section class="featuredSpeakerSection py-5 padding-common">
         <div class="container p-0">
             <div class="row p-0">
-                <div class="col-lg-5">
+                <div class="col-md-5">
                     <div class="featuredSpeakerImage p-2 rounded">
                         <div class="featuredContent">
                             <h4 class="mb-1 mt-0">Featured Quote</h4>
@@ -150,8 +147,8 @@ include get_theme_file_path('/public/tnc-header.php');
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <h2 class="text-white font-weight-bold mb-2">Featured Speaker</h2>
+                <div class="col-md-6 offset-md-1">
+                    <h2 class="text-white font-weight-bold mb-2 mt-lg-0 mt-md-0 mt-sm-2 mt-2">Featured Speaker</h2>
                     <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
                     <div class="mt-4">
                         <a href="" class="btn py-1 text-dark startBtn rounded border border-dark">START NOW</a>
@@ -182,10 +179,10 @@ include get_theme_file_path('/public/tnc-header.php');
     <section class="paginationContainer padding-10 mx-2">
         <div class="container p-0 py-4">
             <div class="row p-0">
-                <div class="col-lg-6">
+                <div class="col-md-6 text-lg-left text-md-left text-sm-center text-center">
                     <span>Latest featured <span class="font-weight-bold">posts</span>...</span>
                 </div>
-                <div class="col-lg-6 text-right">
+                <div class="col-md-6 text-lg-right text-md-right text-sm-center text-center mt-lg-0 mt-md-0 mt-sm-2 mt-2">
                     <a href="" class="text-info font-weight-bold mr-3"><< prev</a>
                     <a href="" class="text-info font-weight-bold mx-1">1</a>
                     <a href="" class="text-info font-weight-bold mx-1">2</a>
@@ -243,16 +240,16 @@ include get_theme_file_path('/public/tnc-header.php');
     <section class="downloadAppSection py-5 mt-4 padding-common">
         <div class="container p-0">
             <div class="row p-0">
-                <div class="col-lg-6 offset-lg-1 d-flex align-items-center">
+                <div class="col-md-6 offset-md-1 d-flex align-items-center order-lg-1 order-md-1 order-sm-2 order-2">
                     <div class="">
-                        <h1 class="mt-0 mb-2 font-weight-bold">Download the App...</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
-                        <div class="mt-4">
+                        <h1 class="mt-0 mb-2 font-weight-bold text-lg-left text-ms-left text-sm-center text-center">Download the App...</h1>
+                        <p class="text-lg-left text-ms-left text-sm-center text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
+                        <div class="mt-md-4 text-lg-left text-ms-left text-sm-center text-center">
                             <a href="" class="btn py-1 text-dark startBtn rounded border border-dark">START NOW</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 text-center">
+                <div class="col-md-5 text-center mb-lg-0 mb-md-0 mb-sm-4 mb-4 order-lg-2 order-md-2 order-sm-1 order-1">
                     <img style="width:70%; border-radius:50px;" class="" src="<?php echo get_template_directory_uri() ?>/public/theme/images/mobileImage.png">
                 </div>
             </div>
@@ -272,16 +269,31 @@ include get_theme_file_path('/public/tnc-footer.php');
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script type="text/javascript">
-    $(document).ready(function(){
-        $('.slickSlider').slick({
-            slidesToShow: 6,  
-            slidesToScroll: 1, 
-            dots: true,       
-            infinite: true,   
-            autoplay: false,
-            arrows: false      
-        });
+   $(document).ready(function() {
+    $('.slickSlider').slick({
+        slidesToShow: 6,  
+        slidesToScroll: 1, 
+        dots: true,       
+        infinite: true,   
+        autoplay: false,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
     });
+});
+
     $(document).ready(function(){
         $('.slickSliderPost').slick({
             slidesToShow: 6,  
@@ -289,7 +301,21 @@ include get_theme_file_path('/public/tnc-footer.php');
             dots: false,       
             infinite: true,   
             autoplay: false,
-            arrows: false      
+            arrows: false ,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }
+            ]     
         });
     });
 </script>

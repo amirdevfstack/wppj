@@ -1,5 +1,26 @@
 
-/* signup page  */
+/* Header & Footer Start */
+.mainHeader{
+    background:#3a414a;
+}
+.mainHeader .heading{
+    color:#e3c4c5 !important;
+}
+.mainHeader ul a {
+    color:#e3c4c5;
+}
+.mainHeader .startBtn {
+    background:#e3c4c5;
+    
+}
+.mainFooter {
+    background:#3a414a;
+}
+
+/* Header & Footer End  */
+
+
+/* signup page Start */
 
 .singUpContainer .roundedPill{
     border-radius: 14px;
@@ -29,15 +50,21 @@
   }
 
 
+/* signup page End */
+
+
+
 
 /* Home Page  */
-
 
 .firstHomeContainer .startBtn, .featuredSection .startBtn, .loveWithAndWithOut .startBtn, .featuredSpeakerSection .startBtn, .downloadAppSection .startBtn {
     background:#e3c4c5;
 }
 .firstHomeContainer .row{
     padding-top: 300px;
+}
+.firstHomeContainer .videoPlay{
+    width: 500px;
 }
 .homePageSlider img {
     width: 100%;
@@ -99,11 +126,13 @@
   }
   .featuredSpeakerImage {
     height: 100%;
+    /* height: 400px; */
     position: relative;
   }
   .featuredSpeakerImage .featuredContent {
     position: absolute;
     bottom: 0;
+    left: 0;
   }
 
 
@@ -111,22 +140,7 @@
 
 
 
-.mainHeader{
-    background:#3a414a;
-}
-.mainHeader .heading{
-    color:#e3c4c5 !important;
-}
-.mainHeader ul a {
-    color:#e3c4c5;
-}
-.mainHeader .startBtn {
-    background:#e3c4c5;
-    
-}
-.mainFooter {
-    background:#3a414a;
-}
+
 
 
 .loader {
@@ -220,5 +234,33 @@
 @media(min-width: 1200px){
     .container{
         max-width: 1920px;
+    }
+}
+
+@media(max-width: 768px){
+    .firstHomeContainer .row{
+        padding-top: 100px;
+    }
+    .firstHomeContainer .videoPlay{
+        width: 100%;
+    }
+    .featuredSection .featuredImage img{
+        width:100%;
+        height: 100%;
+    }
+    .featuredSpeakerImage {
+        height: 400px;
+        position: relative;
+    }
+    .loveWithAndWithOut {
+        padding-block: 100px !important;
+    }
+    .cardContainer {
+        margin-top: 60px;
+        justify-content: center;
+    }
+    .cardContainer .cardBox {
+        margin-left: 14px;
+        flex-basis: calc(25% - 14px);
     }
 }
