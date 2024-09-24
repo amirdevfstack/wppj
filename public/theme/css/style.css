@@ -1,31 +1,4 @@
 
-/* Header & Footer Start */
-.mainHeader{
-    background:#3a414a;
-}
-.mainHeader .heading{
-    color:#e3c4c5 !important;
-}
-.mainHeader ul a {
-    color:#e3c4c5;
-}
-.mainHeader .startBtn {
-    background:#e3c4c5;
-    
-}
-.mainFooter {
-    background:#3a414a;
-}
-
-/* Header & Footer End  */
-
-
-/* signup page Start */
-
-.singUpContainer .roundedPill{
-    border-radius: 14px;
-}
-
 .singUpContainer form input::placeholder {
     color: black !important;
 }
@@ -50,16 +23,8 @@
   }
 
 
-/* signup page End */
-
-
-
-
 /* Home Page  */
 
-.firstHomeContainer .startBtn, .featuredSection .startBtn, .loveWithAndWithOut .startBtn, .featuredSpeakerSection .startBtn, .downloadAppSection .startBtn {
-    background:#e3c4c5;
-}
 .firstHomeContainer .row{
     padding-top: 300px;
 }
@@ -68,8 +33,6 @@
 }
 .homePageSlider img {
     width: 100%;
-    height: auto;
-    display: block;
 }
 .homePageSlider .slick-dots {
     position: relative;
@@ -126,22 +89,12 @@
   }
   .featuredSpeakerImage {
     height: 100%;
-    /* height: 400px; */
     position: relative;
   }
   .featuredSpeakerImage .featuredContent {
     position: absolute;
     bottom: 0;
-    left: 0;
   }
-
-
-
-
-
-
-
-
 
 .loader {
     border: 5px solid #f3f3f3;

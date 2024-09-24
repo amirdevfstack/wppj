@@ -6,7 +6,7 @@
 
 include get_theme_file_path('/public/tnc-header.php');
 ?>
-<style>
+<style> 
     .signupBgImage{
         background-image:url("<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg");
         background-repeat:no-repeat;
@@ -45,8 +45,7 @@ include get_theme_file_path('/public/tnc-header.php');
                         </label>
                     </div>
                     <div class="form-group mb-4">
-                        <button type="submit" class="btn bg-white text-dark border border-secondary w-100 roundedPill text-dark">Sign Up</button>
-        
+                        <button type="submit" class="btn bg-white text-dark btn-round border border-secondary w-100 text-dark">Sign Up</button>
                     </div>
         
                     <div class="text-center signupIcon">

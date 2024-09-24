@@ -30,7 +30,7 @@ include get_theme_file_path('/public/tnc-header.php');
                     </div>
                     
                     <div class="form-group mb-4">
-                        <button type="submit" class="btn bg-white text-dark border border-secondary w-100 roundedPill text-dark">Sign In</button>
+                        <button type="submit" class="btn bg-white btn-round text-dark border border-secondary w-100 text-dark">Sign In</button>
         
                     </div>
         

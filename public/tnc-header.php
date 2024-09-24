@@ -80,17 +80,19 @@
     <link href="<?php echo get_template_directory_uri(); ?>/public/theme/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri(); ?>/public/theme/css/demo.css" rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri(); ?>/public/theme/css/style.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
     
 </head>
 
 <body <?php body_class('landing-page'); ?>>
-
-    <nav class="navbar navbar-expand-lg mainHeader fixed-top padding-common">
+ 
+    <nav class="navbar navbar-expand-lg mainHeader bg-dark fixed-top padding-common">
    
             <div class="container px-0"> 
                 <div class="navbar-translate">
-                <h4 class="m-0 heading d-lg-none">AMPLIFY 528</h4>
+                <h4 class="m-0 heading d-lg-none text-primary">AMPLIFY 528</h4>
                 <a class="navbar-brand" href="<?php echo home_url('/'); ?>" rel="tooltip" title=""
                     data-placement="bottom" data-original-title="<?php $business_name = BusinessAdmin::get_business_info_by_slug('business-name');
                     if (!empty ($business_name)) {
@@ -125,7 +127,7 @@
                         <div class="container pt-lg-0 pt-md-3 pt-sm-3 pt-3 px-2">
                             <div class="row">
                                 <div class="col-lg-6 d-flex justify-content-start  align-items-center pl-0">
-                                    <h4 class="px-3 m-0 heading" >AMPLIFY 528</h4>
+                                    <h4 class="px-3 m-0 heading text-primary" >AMPLIFY 528</h4>
                                 </div>
                     
                                 <div class="col-lg-6">
@@ -134,11 +136,8 @@
                                             <a class="nav-link px-lg-2 px-md-0 px-sm-0 px-0" href="#">LOGIN</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="btn py-1 text-dark startBtn" href="#">START NOW</a>
+                                            <a class="btn py-1 text-white startBtn bg-primary" href="#">START NOW</a>
                                         </li>
-                                        <!-- <li class="nav-item pl-3">
-                                           
-                                        </li> -->
                                     </ul>
                                 </div>
                             </div>

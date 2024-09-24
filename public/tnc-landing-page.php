@@ -13,10 +13,11 @@ include get_theme_file_path('/public/tnc-header.php');
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 <style>
     .firstHomeContainer, .loveWithAndWithOut, .featuredSpeakerImage, .downloadAppSection {
-        background-image:url("https://www.picsum.photos/100/100");
-        /* background-image:url("<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg"); */
+        /* background-image:url("https://www.picsum.photos/100/100"); */
+        background-image:url("<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg");
         background-repeat:no-repeat;
         background-size: cover;
+        background-position:center center;
     }
 </style>
 
@@ -30,7 +31,7 @@ include get_theme_file_path('/public/tnc-header.php');
                     <h4 class="m-0">Love is Contagious</h4>
                     <h4 class="font-weight-bold my-0">Love is Infectious</h4>
                     <div class="mt-4">
-                        <a href="" class="btn py-1 text-dark startBtn border border-dark">START NOW</a>
+                        <a href="" class="btn py-1 startBtn btn-primary text-white">START NOW</a>
                     </div>
                 </div>
                 <div class="col-md-6 px-0 d-flex flex-column align-items-end">
@@ -110,7 +111,7 @@ include get_theme_file_path('/public/tnc-header.php');
                         <h3 class="m-0">Love is Contagious</h3>
                         <h3 class="font-weight-bold my-0">Love is Infectious</h3>
                         <div class="mt-md-4">
-                            <a href="" class="btn py-1 text-dark startBtn border border-dark">START NOW</a>
+                            <a href="" class="btn py-1 text-white startBtn bg-primary">START NOW</a>
                         </div>
                     </div>
                     <div class="mt-4">
@@ -131,7 +132,7 @@ include get_theme_file_path('/public/tnc-header.php');
             <h3 class="font-weight-bold text-secondary m-0 text-center">Love Within</h3>
             <h2 class="font-weight-bold m-0 text-center">Love Without</h2>
             <div class="mt-4 text-center">
-                <a href="" class="btn py-1 text-dark startBtn rounded border border-dark">START NOW</a>
+                <a href="" class="btn py-1 text-white bg-primary startBtn rounded">START NOW</a>
             </div>
         </div>
     </section>
@@ -151,7 +152,7 @@ include get_theme_file_path('/public/tnc-header.php');
                     <h2 class="text-white font-weight-bold mb-2 mt-lg-0 mt-md-0 mt-sm-2 mt-2">Featured Speaker</h2>
                     <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
                     <div class="mt-4">
-                        <a href="" class="btn py-1 text-dark startBtn rounded border border-dark">START NOW</a>
+                        <a href="" class="btn py-1 text-white bg-primary startBtn rounded">START NOW</a>
                     </div>
                     <div class="cardContainer">
                         <div class="cardBox">
@@ -245,7 +246,7 @@ include get_theme_file_path('/public/tnc-header.php');
                         <h1 class="mt-0 mb-2 font-weight-bold text-lg-left text-ms-left text-sm-center text-center">Download the App...</h1>
                         <p class="text-lg-left text-ms-left text-sm-center text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
                         <div class="mt-md-4 text-lg-left text-ms-left text-sm-center text-center">
-                            <a href="" class="btn py-1 text-dark startBtn rounded border border-dark">START NOW</a>
+                            <a href="" class="btn py-1 text-white bg-primary startBtn rounded">START NOW</a>
                         </div>
                     </div>
                 </div>
@@ -255,6 +256,10 @@ include get_theme_file_path('/public/tnc-header.php');
             </div>
         </div>
     </section>
+    
+
+
+
 
 </main>
 
@@ -263,9 +268,8 @@ include get_theme_file_path('/public/tnc-header.php');
 include get_theme_file_path('/public/tnc-footer.php');
 
 ?>
-<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Slick Slider JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script type="text/javascript">

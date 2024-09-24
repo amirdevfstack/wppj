@@ -3,7 +3,7 @@
 <!-- Footer -->
 
 
-<div class="mainFooter py-5 padding-common">
+<div class="mainFooter bg-dark py-5 padding-common">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -69,6 +69,7 @@
 
 
 <?php include get_theme_file_path('public/template/age-verification-modal.php'); ?>
+
 </body>
 <?php wp_footer(); ?>
 
