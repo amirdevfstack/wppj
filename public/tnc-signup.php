@@ -23,13 +23,13 @@ include get_theme_file_path('/public/tnc-header.php');
                 <h5 class="font-weight-bold my-2 text-secondary">Sign Up</h5>
                 <form class="border border-secondary rounded p-4">
                     <div class="form-group mb-4">
-                        <input type="email" class="form-control rounded border border-secondary" id="email" aria-describedby="emailHelp" placeholder="email">
+                        <input type="email" class="form-control " id="email" aria-describedby="emailHelp" placeholder="email">
                     </div>
                     <div class="form-group mb-4">
-                        <input type="password" class="form-control rounded border border-secondary" id="password" placeholder="Password">
+                        <input type="password" class="form-control " id="password" placeholder="Password">
                     </div>
                     <div class="form-group mb-4">
-                        <input type="password" class="form-control rounded border border-secondary" id="verifyPassword" placeholder="Verify Password">
+                        <input type="password" class="form-control " id="verifyPassword" placeholder="Verify Password">
                     </div>
         
                     <div class="form-check d-flex justify-content-between mb-4">
@@ -44,8 +44,8 @@ include get_theme_file_path('/public/tnc-header.php');
                             Privacy Policy
                         </label>
                     </div>
-                    <div class="form-group mb-4">
-                        <button type="submit" class="btn bg-white text-dark btn-round border border-secondary w-100 text-dark">Sign Up</button>
+                    <div class="form-group mb-4 text-center">
+                        <button type="submit" class="btn btn-primary btn-round btn-lg">Sign Up</button>
                     </div>
         
                     <div class="text-center signupIcon">
@@ -66,6 +66,59 @@ include get_theme_file_path('/public/tnc-header.php');
     </div>
 
 </div>
+
+<div class="col-md-4 mr-auto">
+<div class="card card-signup">
+<div class="card-body">
+<h4 class="card-title text-center">Register</h4>
+<div class="social text-center">
+<button class="btn btn-icon btn-round btn-twitter">
+<i class="fab fa-twitter"></i>
+</button>
+<button class="btn btn-icon btn-round btn-dribbble">
+<i class="fab fa-dribbble"></i>
+</button>
+<button class="btn btn-icon btn-round btn-facebook">
+<i class="fab fa-facebook"> </i>
+</button>
+<h5 class="card-description"> or be classical </h5>
+</div>
+<form class="form" method="" action="">
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+</div>
+<input type="text" class="form-control" placeholder="First Name..." autocomplete="fullname">
+</div>
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+</div>
+<input type="text" class="form-control" placeholder="Last Name..." autocomplete="name">
+</div>
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+</div>
+<input type="text" class="form-control" placeholder="Your Email..." autocomplete="email">
+</div>
+
+<div class="form-check">
+<label class="form-check-label">
+<input class="form-check-input" type="checkbox">
+<span class="form-check-sign"></span>
+I agree to the terms and <a href="#something">conditions</a>.
+</label>
+</div>
+<div class="card-footer text-center">
+<a href="#pablo" class="btn btn-primary btn-round btn-lg">Get Started</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+
 
 <?php
 

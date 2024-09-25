@@ -1,8 +1,4 @@
 <!-- <div style="padding-top: 79px; background-color: #2c2c2c;"></div> -->
-
-<!-- Footer -->
-
-
 <div class="mainFooter bg-dark py-5 padding-common">
     <div class="container">
         <div class="row">
@@ -65,9 +61,6 @@
         </div>
     </div>
 </div>
-
-
-
 <?php include get_theme_file_path('public/template/age-verification-modal.php'); ?>
 
 </body>

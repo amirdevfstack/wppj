@@ -23,14 +23,14 @@ include get_theme_file_path('/public/tnc-header.php');
                 <h5 class="font-weight-bold my-2 text-secondary">Sign In</h5>
                 <form class="border border-secondary rounded p-4">
                     <div class="form-group mb-4">
-                        <input type="email" class="form-control rounded border border-secondary" id="email" aria-describedby="emailHelp" placeholder="email">
+                        <input type="email" class="form-control" id="email" placeholder="Email...">
                     </div>
                     <div class="form-group mb-4">
-                        <input type="password" class="form-control rounded border border-secondary" id="password" placeholder="Password">
+                        <input type="password" class="form-control" id="password" placeholder="Password...">
                     </div>
                     
-                    <div class="form-group mb-4">
-                        <button type="submit" class="btn bg-white btn-round text-dark border border-secondary w-100 text-dark">Sign In</button>
+                    <div class="form-group mb-4 text-center">
+                        <button type="submit" class="btn btn-primary btn-round btn-lg">Sign In</button>
         
                     </div>
         
