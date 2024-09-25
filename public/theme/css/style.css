@@ -1,19 +1,8 @@
 
 .singUpContainer form input::placeholder {
-    color: black !important;
+    color: gray !important;
 }
-.singUpContainer .form-check-sign::before{
-    width: 20px !important;
-    height: 20px !important;
-    border: 1px solid gray !important;
-    border-radius: 6px !important;
-}
-.singUpContainer .form-check-sign::after{
-    left: -3px !important;
-}
-.singUpContainer .form-check-label {
-    line-height: 19px !important;
-}
+
 
 .signupIcon i, .footerIcon i {
     font-size: 24px;
@@ -143,6 +132,9 @@
     animation: scrollMarquee 20s linear infinite;
 }
 
+.card-signup {
+    max-width: 100% !important;
+}
 
 @keyframes scrollMarquee {
     0% {

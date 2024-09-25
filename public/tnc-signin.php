@@ -6,9 +6,9 @@
 
 include get_theme_file_path('/public/tnc-header.php');
 ?>
-<style>
+<style> 
     .signupBgImage{
-        background-image:url("<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg");
+        background-image:url("<?php echo get_template_directory_uri() ?>/public/theme/images/bg18.jpg");
         background-repeat:no-repeat;
         background-size:cover;
 
@@ -18,34 +18,43 @@ include get_theme_file_path('/public/tnc-header.php');
     
     <div class="row m-0 height-100vh align-items-center justify-content-end marginRight">
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 " >
             <div class="singUpContainer">
-                <h5 class="font-weight-bold my-2 text-secondary">Sign In</h5>
-                <form class="border border-secondary rounded p-4">
-                    <div class="form-group mb-4">
-                        <input type="email" class="form-control" id="email" placeholder="Email...">
-                    </div>
-                    <div class="form-group mb-4">
-                        <input type="password" class="form-control" id="password" placeholder="Password...">
-                    </div>
-                    
-                    <div class="form-group mb-4 text-center">
-                        <button type="submit" class="btn btn-primary btn-round btn-lg">Sign In</button>
-        
-                    </div>
-        
-                    <div class="text-center signupIcon">
-                        <a href="" class="text-dark">
-                            <i class="fab fa-facebook-square mx-2"></i>
-                        </a>
-                        <a href="" class="text-dark">
-                            <i class="fab fa-google mx-2"></i>
-                        </a>
-                        
-                        <!-- <img src="http://localhost/pjwordpress/wp-content/themes/wppj/public/theme/images/signupIcon.png" alt=""> -->
-                    </div>
-        
+            <div class="card card-signup py-4">
+                <div class="card-body">
+                <h4 class="card-title text-center">Sign In</h4>
+                <div class="social text-center">
+                <button class="btn btn-icon btn-round btn-twitter">
+                <i class="fab fa-twitter"></i>
+                </button>
+                <button class="btn btn-icon btn-round btn-dribbble">
+                <i class="fab fa-dribbble"></i>
+                </button>
+                <button class="btn btn-icon btn-round btn-facebook">
+                <i class="fab fa-facebook"> </i>
+                </button>
+                <h5 class="card-description"> or be classical </h5>
+                </div>
+                <form class="form" method="" action="">
+                <div class="input-group">
+                <div class="input-group-prepend">
+                <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Email..." autocomplete="email">
+                </div>
+                <div class="input-group">
+                <div class="input-group-prepend">
+                <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Password..." autocomplete="password">
+                </div>
+                
+                <div class="card-footer text-center">
+                <a href="#pablo" class="btn btn-primary btn-round btn-lg">Sign In</a>
+                </div>
                 </form>
+                </div>
+                </div>
             </div>
 
         </div>
