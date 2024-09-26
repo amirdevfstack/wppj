@@ -11,8 +11,7 @@ include get_theme_file_path('/public/tnc-header.php');
 ?>
 
 <style>
-    .firstHomeContainer, .loveWithAndWithOut, .featuredSpeakerImage, .downloadAppSection {
-        /* background-image:url("https://www.picsum.photos/100/100"); */
+    .firstHomeContainer, .loveWithAndWithOut, .featuredSpeakerImage {
         background-image:url("<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg");
         background-repeat:no-repeat;
         background-size: cover;
@@ -27,10 +26,10 @@ include get_theme_file_path('/public/tnc-header.php');
             <div class="row pb-4">
 
                 <div class="col-md-6 px-0 d-flex flex-column justify-content-end align-items-lg-start align-items-md-start align-items-sm-center align-items-center">
-                    <h4 class="m-0">Love is Contagious</h4>
-                    <h4 class="font-weight-bold my-0">Love is Infectious</h4>
+                    <h1 class="m-0 font-weight-bold text-white">Love is Contagious</h1>
+                    <h4 class="font-weight-bold my-0 text-white">Love is Infectious</h4>
                     <div class="mt-4">
-                        <a href="" class="btn py-1 startBtn btn-primary text-white">START NOW</a>
+                    <a href="#pablo" class="btn btn-primary btn-lg">Start Now</a>
                     </div>
                 </div>
                 <div class="col-md-6 px-0 d-flex flex-column align-items-end">
@@ -75,25 +74,25 @@ include get_theme_file_path('/public/tnc-header.php');
         <div class="container p-0">
             <div class="slickSlider">
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 1">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 1">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 2">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 2">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 3">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 3">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 4">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 4">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 5">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 5">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 6">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 6">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 6">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 6">
                 </div>
             </div>
         </div>
@@ -104,13 +103,13 @@ include get_theme_file_path('/public/tnc-header.php');
         <div class="container p-0">
             <div class="row">
                 <div class="col-md-6 order-lg-1 order-md-1 order-sm-2 order-2 mt-lg-0 mt-md-3 mt-sm-3 mt-3">
-                    <h3 class="text-secondary font-weight-bold mb-2">Feature Section</h3>
+                    <h2 class="text-secondary font-weight-bold mb-2">Feature Section</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
                     <div class="mt-md-5">
                         <h3 class="m-0">Love is Contagious</h3>
                         <h3 class="font-weight-bold my-0">Love is Infectious</h3>
                         <div class="mt-md-4">
-                            <a href="" class="btn py-1 text-white startBtn bg-primary">START NOW</a>
+                        <a href="#pablo" class="btn btn-primary btn-lg">Start Now</a>
                         </div>
                     </div>
                     <div class="mt-4">
@@ -119,7 +118,7 @@ include get_theme_file_path('/public/tnc-header.php');
                 </div>
                 <div class="col-md-6 order-lg-2 order-md-2 order-sm-1 order-1">
                     <div class="featuredImage">
-                        <img src="https://www.picsum.photos/100/100" alt="">
+                        <img src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg18.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -128,22 +127,25 @@ include get_theme_file_path('/public/tnc-header.php');
 
     <section class="loveWithAndWithOut padding-common marginTop">
         <div class="">
-            <h3 class="font-weight-bold text-secondary m-0 text-center">Love Within</h3>
-            <h2 class="font-weight-bold m-0 text-center">Love Without</h2>
+            <h3 class="font-weight-bold text-white m-0 text-center">Love Within</h3>
+            <h2 class="font-weight-bold m-0 text-center text-white">Love Without</h2>
             <div class="mt-4 text-center">
-                <a href="" class="btn py-1 text-white bg-primary startBtn rounded">START NOW</a>
+            <a href="#pablo" class="btn btn-primary btn-lg">Start Now</a>
             </div>
         </div>
     </section>
 
-    <section class="featuredSpeakerSection py-5 padding-common">
+    <section class="featuredSpeakerSection py-5 padding-common" >
         <div class="container p-0">
             <div class="row p-0">
                 <div class="col-md-5">
-                    <div class="featuredSpeakerImage p-2 rounded">
+                    <div class="featuredSpeakerImage p-2 rounded" style="background-image:url('<?php echo get_template_directory_uri() ?>/public/theme/images/bg15.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center center;">
                         <div class="featuredContent">
-                            <h4 class="mb-1 mt-0">Featured Quote</h4>
-                            <p class="">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula."</p>
+                            <h4 class="mb-1 mt-0 text-white">Featured Quote</h4>
+                            <p class="text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula."</p>
                         </div>
                     </div>
                 </div>
@@ -151,23 +153,23 @@ include get_theme_file_path('/public/tnc-header.php');
                     <h2 class="text-white font-weight-bold mb-2 mt-lg-0 mt-md-0 mt-sm-2 mt-2">Featured Speaker</h2>
                     <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
                     <div class="mt-4">
-                        <a href="" class="btn py-1 text-white bg-primary startBtn rounded">START NOW</a>
+                    <a href="#pablo" class="btn btn-primary btn-lg">Start Now</a>
                     </div>
                     <div class="cardContainer">
                         <div class="cardBox">
-                            <img class="rounded" src="https://www.picsum.photos/100/100" alt="">
+                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg" alt="">
                             <h6 class="text-white text-center mt-1">Person Name</h6>
                         </div>
                         <div class="cardBox">
-                            <img class="rounded" src="https://www.picsum.photos/100/100" alt="">
+                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg" alt="">
                             <h6 class="text-white text-center mt-1">Person Name</h6>
                         </div>
                         <div class="cardBox">
-                            <img class="rounded" src="https://www.picsum.photos/100/100" alt="">
+                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg" alt="">
                             <h6 class="text-white text-center mt-1">Person Name</h6>
                         </div>
                         <div class="cardBox">
-                            <img class="rounded" src="https://www.picsum.photos/100/100" alt="">
+                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg" alt="">
                             <h6 class="text-white text-center mt-1">Person Name</h6>
                         </div>
                     </div>
@@ -205,31 +207,31 @@ include get_theme_file_path('/public/tnc-header.php');
         <div class="container p-0">
             <div class="slickSliderPost">
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 1">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 1">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 2">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 2">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 3">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 3">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 4">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 4">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 5">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 5">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 6">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 6">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="https://www.picsum.photos/100/100" alt="Image 6">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 6">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
             </div>
@@ -237,15 +239,15 @@ include get_theme_file_path('/public/tnc-header.php');
 
     </section>
 
-    <section class="downloadAppSection py-5 mt-4 padding-common">
+    <section class="downloadAppSection py-5 mt-4 padding-common bg-light">
         <div class="container p-0">
             <div class="row p-0">
                 <div class="col-md-6 offset-md-1 d-flex align-items-center order-lg-1 order-md-1 order-sm-2 order-2">
                     <div class="">
-                        <h1 class="mt-0 mb-2 font-weight-bold text-lg-left text-ms-left text-sm-center text-center">Download the App...</h1>
+                        <h2 class="mt-0 mb-2 font-weight-bold text-lg-left text-ms-left text-sm-center text-center">Download the App...</h2>
                         <p class="text-lg-left text-ms-left text-sm-center text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
                         <div class="mt-md-4 text-lg-left text-ms-left text-sm-center text-center">
-                            <a href="" class="btn py-1 text-white bg-primary startBtn rounded">START NOW</a>
+                        <a href="#pablo" class="btn btn-primary btn-lg">Start Now</a>
                         </div>
                     </div>
                 </div>

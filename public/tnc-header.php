@@ -87,7 +87,7 @@
                                             <a class="nav-link px-lg-2 px-md-0 px-sm-0 px-0" href="#">LOGIN</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="btn py-1 text-white startBtn bg-primary" href="#">START NOW</a>
+                                        <a href="#pablo" class="btn btn-primary btn-lg">Start Now</a>
                                         </li>
                                     </ul>
                                 </div>
