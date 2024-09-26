@@ -1,23 +1,3 @@
-<?php
-    $operating_hours = BusinessAdmin::get_business_info_by_slug('operating-hours');
-    $business_name = BusinessAdmin::get_business_info_by_slug('business-name');
-    $address = BusinessAdmin::get_business_info_by_slug('address');
-    $street = BusinessAdmin::get_business_info_by_slug('street');
-    $street2 = BusinessAdmin::get_business_info_by_slug('street2');
-    $city = BusinessAdmin::get_business_info_by_slug('city');
-    $state = BusinessAdmin::get_business_info_by_slug('state');
-    $postal_code = BusinessAdmin::get_business_info_by_slug('postal-code');
-    $country = BusinessAdmin::get_business_info_by_slug('country');
-    $phone_number = BusinessAdmin::get_business_info_by_slug('phone-number');
-    $email = BusinessAdmin::get_business_info_by_slug('email');
-    $og_title = OpenGraphAdmin::get_opengraph_info_by_slug('og-title');
-    $og_type = OpenGraphAdmin::get_opengraph_info_by_slug('og-type');
-    $og_image = OpenGraphAdmin::get_opengraph_info_by_slug('og-image');
-    $og_url = OpenGraphAdmin::get_opengraph_info_by_slug('og-url');
-    $og_description = OpenGraphAdmin::get_opengraph_info_by_slug('og-description');
-    $og_site_name = OpenGraphAdmin::get_opengraph_info_by_slug('og-site-name');
-    $og_locale = OpenGraphAdmin::get_opengraph_info_by_slug('og-locale');
-?> 
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -25,51 +5,22 @@
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
         name='viewport' />
-        <?php if(!empty($og_title) ){?>
-        <meta property="og:title" content="<?= $og_title ; ?>">
-        <?php } ?>
-        <?php if(!empty($og_type) ){?>
-        <meta property="og:type" content="<?= $og_type ; ?>">
-        <?php } ?>
-        <?php if(!empty($og_image) ){?>
-        <meta property="og:image" content="<?= $og_image ; ?>">
-        <?php } ?>
-        <?php if(!empty($og_url)) {?>
-        <meta property="og:url" content="<?= $og_url ; ?>">
-        <?php } ?>
-        <?php if(!empty($og_description) ){?>
-        <meta property="og:description" content="<?= $og_description ; ?>">
-        <?php } ?>
-        <?php if(!empty($og_site_name) ){?>
-        <meta property="og:site_name" content="<?= $og_site_name ; ?>">
-        <?php } ?>
-        <?php if(!empty($og_locale)){?>
-        <meta property="og:locale" content="<?= $og_locale ; ?>">
-        <?php } ?>
-        <?php if(!empty($address)){?>
-        <meta property="business:contact_data:street_address" content="<?= $address ; ?>">
-        <?php } ?>
-        <?php if(!empty($city)){?>
-        <meta property="business:contact_data:locality" content="<?= $city ; ?>">
-        <?php } ?>
-        <?php if(!empty($state)){?>
-        <meta property="business:contact_data:region" content="<?= $state ; ?>">
-        <?php } ?>
-        <?php if(!empty($postal_code)){?>
-        <meta property="business:contact_data:postal_code" content="<?= $postal_code ; ?>">
-        <?php } ?>
-        <?php if(!empty($country)){?>
-        <meta property="business:contact_data:country_name" content="<?= $country ; ?>">
-        <?php } ?>
-        <?php if(!empty($email)){?>
-        <meta property="business:contact_data:email" content="<?= $email ; ?>">
-        <?php } ?>
-        <?php if(!empty($address)){?>
-        <meta property="business:contact_data:phone_number" content="<?= $phone_number ; ?>">
-        <?php } ?>
-        <?php if(!empty($og_url)){?>
-        <meta property="business:contact_data:website" content="<?= $og_url ; ?>">
-        <?php } ?>
+       
+    <meta property="og:title" content="Your OG Title Here">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourdomain.com/path/to/image.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:description" content="Your website description here.">
+    <meta property="og:site_name" content="Your Site Name">
+    <meta property="og:locale" content="en_US"> 
+    <meta property="business:contact_data:street_address" content="123 Main St">
+    <meta property="business:contact_data:locality" content="Your City">
+    <meta property="business:contact_data:region" content="Your State">
+    <meta property="business:contact_data:postal_code" content="12345">
+    <meta property="business:contact_data:country_name" content="Your Country">
+    <meta property="business:contact_data:email" content="email@domain.com">
+    <meta property="business:contact_data:phone_number" content="+1234567890">
+    <meta property="business:contact_data:website" content="https://yourdomain.com">
        
     <link rel="apple-touch-icon" sizes="76x76"
         href="<?php echo get_template_directory_uri(); ?>/public/theme/public/theme/images/apple-icon.png">
@@ -83,7 +34,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     
-    
+   
 </head>
 
 <body <?php body_class('landing-page'); ?>>
@@ -145,23 +96,7 @@
 
             </div>
         </div>
-        <div class="dropdown button-dropdown">
-<a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-<span class="button-bar"></span>
-<span class="button-bar"></span>
-<span class="button-bar"></span>
-</a>
-<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-<a class="dropdown-header">Dropdown header</a>
-<a class="dropdown-item" href="#">Action</a>
-<a class="dropdown-item" href="#">Another action</a>
-<a class="dropdown-item" href="#">Something else here</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">Separated link</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="#">One more separated link</a>
-</div>
-</div>
+      
     </nav>
 
     
