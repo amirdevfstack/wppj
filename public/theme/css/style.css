@@ -2,7 +2,20 @@
 .singUpContainer form input::placeholder {
     color: gray !important;
 }
-
+.signupBgImage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(44, 44, 44, .2), rgba(0, 0, 0, .7));
+    z-index: 1;
+}
+.signupBgImage, .singUpContainer  {
+    position: relative;
+    z-index: 2;
+}
 
 .signupIcon i, .footerIcon i {
     font-size: 24px;
