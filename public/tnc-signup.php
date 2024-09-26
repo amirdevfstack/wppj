@@ -7,14 +7,16 @@
 include get_theme_file_path('/public/tnc-header.php');
 ?>
 <style> 
-    .signupBgImage{
-        background-image:url("<?php echo get_template_directory_uri() ?>/public/theme/images/bg18.jpg");
-        background-repeat:no-repeat;
-        background-size:cover;
-
+    .signupBgImage {
+        background-image: url("<?php echo get_template_directory_uri() ?>/public/theme/images/bg18.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative; /* Ensure the container can hold the overlay */
     }
+
 </style>
-<div class="wrapper signupBgImage container-fluid" style=" margin-top:60px;">
+
+<div class="wrapper signupBgImage container-fluid" style=" margin-top:60px;" >
     
     <div class="row m-0 height-100vh align-items-center justify-content-end marginRight">
 
