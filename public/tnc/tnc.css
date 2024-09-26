@@ -50,14 +50,3 @@ tr.sub-table-row > td {
     padding: 0px !important;
     margin: 0px !important;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-}
-
-.grid-item {
-    padding: 20px;
-    text-align: center;
-}

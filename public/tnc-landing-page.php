@@ -9,8 +9,7 @@ include get_theme_file_path('/public/tnc-header.php');
 
 
 ?>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 <style>
     .firstHomeContainer, .loveWithAndWithOut, .featuredSpeakerImage, .downloadAppSection {
         /* background-image:url("https://www.picsum.photos/100/100"); */
@@ -263,14 +262,12 @@ include get_theme_file_path('/public/tnc-header.php');
 
 </main>
 
-<?php
+<?php 
 
 include get_theme_file_path('/public/tnc-footer.php');
 
 ?>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
 <script type="text/javascript">
    $(document).ready(function() {

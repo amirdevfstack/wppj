@@ -6,25 +6,6 @@
 
     include get_theme_file_path('/public/tnc-header.php');
 ?>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<style>
-    /* Style the calendar container */
-    #datepicker {
-        font-size: 16px;
-        width: auto;
-        margin-top: 20px;
-    }
-
-    .ui-datepicker {
-        width: 100%;
-        background: white;
-        border: 1px solid #ddd;
-        padding: 10px;
-    }
-</style>
-
 <div class="wrapper" style=" margin-top:60px;">
     
     <section class="padding-10 d-flex align-items-end" style="background-image:url('<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg');background-repeat:no-repeat;background-size: cover;background-position:center center;height:500px;">
@@ -127,9 +108,6 @@
 include get_theme_file_path('/public/tnc-footer.php');
 
 ?>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
        $(document).ready(function() {
@@ -155,17 +133,5 @@ include get_theme_file_path('/public/tnc-footer.php');
             }
         ]
     });
-});
-    $(function() {
-        // Initialize the datepicker and always show it
-        $("#datepicker").datepicker({
-            showOtherMonths: true,
-            selectOtherMonths: true,
-            changeMonth: true,
-            changeYear: true,
-            dateFormat: 'MM yy'
-        }).datepicker("show"); // Ensures it is always displayed
-    });
-
-    
+});  
 </script>
