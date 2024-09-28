@@ -52,7 +52,7 @@ include get_theme_file_path('/public/tnc-header.php');
                     <span>Events with a <span class="font-weight-bold">purpose</span>...</span>
                 </div>
                 <div class="col-md-6 text-lg-right text-md-right text-sm-center text-center mt-lg-0 mt-md-0 mt-sm-2 mt-2">
-                    <div class="pagination-container d-flex justify-content-end">
+                    <div class="pagination-container d-flex justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center">
                         <ul class="pagination pagination-primary">
                             <li class="page-item">
                             <a class="page-link" href="#" aria-label="Previous">
@@ -243,7 +243,7 @@ include get_theme_file_path('/public/tnc-header.php');
                     <span>Latest featured <span class="font-weight-bold">posts</span>...</span>
                 </div>
                 <div class="col-md-6 text-lg-right text-md-right text-sm-center text-center mt-lg-0 mt-md-0 mt-sm-2 mt-2">
-                <div class="pagination-container d-flex justify-content-end">
+                <div class="pagination-container d-flex justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center">
                         <ul class="pagination pagination-primary">
                             <li class="page-item">
                             <a class="page-link" href="#" aria-label="Previous">

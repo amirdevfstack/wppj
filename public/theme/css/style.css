@@ -185,6 +185,9 @@
 }
 
 @media(max-width: 768px){
+    .cardContainer .swiper-button-prev {
+        left: 77%;
+      }
     .firstHomeContainer .row{
         padding-top: 100px;
     }
