@@ -66,11 +66,9 @@ function enqueue_slick_carousel_assets() {
         'jquery','https://code.jquery.com/jquery-3.6.0.min.js', array(), null, true);
     wp_enqueue_script('jquery'); 
     wp_enqueue_style(
-        'slick-carousel-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), null);
-    wp_enqueue_style(
-        'slick-carousel-theme-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array('slick-carousel-css'), null);
+        'slick-carousel-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), null);
     wp_enqueue_script(
-        'slick-carousel-js', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), null, true);
+        'slick-carousel-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), null, true);
           wp_enqueue_script('jquery-ui','https://code.jquery.com/ui/1.12.1/jquery-ui.js', array('jquery'), null, true);
         wp_enqueue_style('jquery-ui-css','https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css', array(), null);
 }

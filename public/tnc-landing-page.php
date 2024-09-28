@@ -23,7 +23,7 @@ include get_theme_file_path('/public/tnc-header.php');
 
     <section class="firstHomeContainer padding-common">
         <div class="container">
-            <div class="row pb-4">
+            <div class="row pb-4"> 
 
                 <div class="col-md-6 px-0 d-flex flex-column justify-content-end align-items-lg-start align-items-md-start align-items-sm-center align-items-center">
                     <h1 class="m-0 font-weight-bold text-white">Love is Contagious</h1>
@@ -70,7 +70,7 @@ include get_theme_file_path('/public/tnc-header.php');
         </div>
     </section>
 
-    <section class="homePageSlider padding-10">
+    <section class="homePageSlider padding-10 d-none">
         <div class="container p-0">
             <div class="slickSlider">
                 <div class="mx-2">
@@ -98,6 +98,42 @@ include get_theme_file_path('/public/tnc-header.php');
         </div>
 
     </section>
+
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
 
     <section class="featuredSection padding-common marginTop">
         <div class="container p-0">
@@ -261,7 +297,6 @@ include get_theme_file_path('/public/tnc-header.php');
 
 
 
-
 </main>
 
 <?php 
@@ -270,55 +305,29 @@ include get_theme_file_path('/public/tnc-footer.php');
 
 ?>
 
-
-<script type="text/javascript">
-   $(document).ready(function() {
-    $('.slickSlider').slick({
-        slidesToShow: 6,  
-        slidesToScroll: 1, 
-        dots: true,       
-        infinite: true,   
-        autoplay: false,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 4,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                }
-            }
-        ]
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      // keyboard:true,
+      // mouseWheel:true,
+      centeredSlides: true,
+      // loop:true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable:true
+      },
+      navigation:{
+        prevEl:'.swiper-button-prev',
+        nextEl:'.swiper-button-next'
+      }
     });
-});
-
-    $(document).ready(function(){
-        $('.slickSliderPost').slick({
-            slidesToShow: 6,  
-            slidesToScroll: 1, 
-            dots: false,       
-            infinite: true,   
-            autoplay: false,
-            arrows: false ,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 4,
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                }
-            ]     
-        });
-    });
-</script>
+  </script>
