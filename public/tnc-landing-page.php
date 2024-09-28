@@ -12,7 +12,7 @@ include get_theme_file_path('/public/tnc-header.php');
 
 <style>
     .firstHomeContainer, .loveWithAndWithOut, .featuredSpeakerImage {
-        background-image:url("<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg");
+        background-image:url("<?php echo get_template_directory_uri() ?>/public/theme/images/first.jpg");
         background-repeat:no-repeat;
         background-size: cover;
         background-position:center center;
@@ -29,7 +29,7 @@ include get_theme_file_path('/public/tnc-header.php');
                     <h1 class="m-0 font-weight-bold text-white">Love is Contagious</h1>
                     <h4 class="font-weight-bold my-0 text-white">Love is Infectious</h4>
                     <div class="mt-4">
-                    <a href="#pablo" class="btn btn-primary btn-lg">Start Now</a>
+                    <a href="#pablo" class="btn btn-primary btn-lg btn-round">Start Now</a>
                     </div>
                 </div>
                 <div class="col-md-6 px-0 d-flex flex-column align-items-end">
@@ -52,87 +52,58 @@ include get_theme_file_path('/public/tnc-header.php');
                     <span>Events with a <span class="font-weight-bold">purpose</span>...</span>
                 </div>
                 <div class="col-md-6 text-lg-right text-md-right text-sm-center text-center mt-lg-0 mt-md-0 mt-sm-2 mt-2">
-                    <a href="" class="text-info font-weight-bold mr-3"><< prev</a>
-                    <a href="" class="text-info font-weight-bold mx-1">1</a>
-                    <a href="" class="text-info font-weight-bold mx-1">2</a>
-                    <a href="" class="text-info font-weight-bold mx-1">3</a>
-                    <a href="" class="text-info font-weight-bold mx-1">4</a>
-                    <a href="" class="text-info font-weight-bold mx-1">5</a>
-                    <a href="" class="text-info font-weight-bold mx-1">6</a>
-                    <a href="" class="text-info font-weight-bold mx-1">7</a>
-                    <a href="" class="text-info font-weight-bold mx-1">8</a>
-                    <a href="" class="text-info font-weight-bold mx-1">9</a>
-                    <a href="" class="text-info font-weight-bold mx-1">10</a>
-                    <a href="" class="text-info font-weight-bold ml-3">next >></a>
+                    <div class="pagination-container d-flex justify-content-end">
+                        <ul class="pagination pagination-primary">
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
+                            </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section class="homePageSlider padding-10 d-none">
-        <div class="container p-0">
-            <div class="slickSlider">
-                <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 1">
+    <section class="homePageSlider padding-10">
+        <div class="container p-0 swiper swiperSliderOne">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 1">
                 </div>
-                <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 2">
+                <div class="swiper-slide">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 2">
                 </div>
-                <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 3">
+                <div class="swiper-slide">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 3">
                 </div>
-                <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 4">
+                <div class="swiper-slide">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 4">
                 </div>
-                <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 5">
+                <div class="swiper-slide">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 5">
                 </div>
-                <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 6">
+                <div class="swiper-slide">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 6">
                 </div>
-                <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 6">
+                <div class="swiper-slide">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 6">
                 </div>
             </div>
         </div>
-
     </section>
-
-    <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-      </div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-pagination"></div>
-  </div>
 
 
     <section class="featuredSection padding-common marginTop">
@@ -145,7 +116,7 @@ include get_theme_file_path('/public/tnc-header.php');
                         <h3 class="m-0">Love is Contagious</h3>
                         <h3 class="font-weight-bold my-0">Love is Infectious</h3>
                         <div class="mt-md-4">
-                        <a href="#pablo" class="btn btn-primary btn-lg">Start Now</a>
+                        <a href="#pablo" class="btn btn-primary btn-lg btn-round">Start Now</a>
                         </div>
                     </div>
                     <div class="mt-4">
@@ -160,16 +131,53 @@ include get_theme_file_path('/public/tnc-header.php');
             </div>
         </div>
     </section>
+    
+    <div class="header-3">
 
-    <section class="loveWithAndWithOut padding-common marginTop">
-        <div class="">
-            <h3 class="font-weight-bold text-white m-0 text-center">Love Within</h3>
-            <h2 class="font-weight-bold m-0 text-center text-white">Love Without</h2>
-            <div class="mt-4 text-center">
-            <a href="#pablo" class="btn btn-primary btn-lg">Start Now</a>
-            </div>
-        </div>
-    </section>
+<div id="carouselExampleIndicators" class="my-5">
+<!-- <ol class="carousel-indicators">
+<li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+</ol> -->
+<div class="carousel-inner" role="listbox">
+<div class="carousel-item active">
+<div class="page-header header-filter">
+<div class="page-header-image" style="background-image: url('<?php echo get_template_directory_uri() ?>/public/theme/images/bg15.jpg');"></div>
+<div class="container">
+<div class="content-center">
+<div class="row">
+<div class="col-md-8 ml-auto mr-auto text-center">
+<h1 class="title">Island of legends.</h1>
+<h4 class="description ">The islands of Malta and Gozo are brilliant for a family holiday, packed with fun places to visit whatever your children’s ages. The islands’ small size means everywhere is within easy reach.</h4>
+<br>
+<h5>Connect with us on:</h5>
+<div class="buttons d-flex justify-content-center">
+<a href="#pablo" class="btn btn-icon btn-neutral btn-danger btn-round mt-2 mx-1 d-flex justify-content-center align-items-center">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="#pablo" class="btn btn-icon btn-neutral btn-danger btn-round mt-2 mx-1 d-flex justify-content-center align-items-center">
+<i class="fab fa-facebook-square"></i>
+</a>
+<a href="#pablo" class="btn btn-icon btn-neutral btn-danger btn-round mt-2 mx-1 d-flex justify-content-center align-items-center">
+<i class="fab fa-google-plus"></i>
+</a>
+<a href="#pablo" class="btn btn-icon btn-neutral btn-danger btn-round  mt-2 mx-1 d-flex justify-content-center align-items-center">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+</div>
 
     <section class="featuredSpeakerSection py-5 padding-common" >
         <div class="container p-0">
@@ -189,24 +197,38 @@ include get_theme_file_path('/public/tnc-header.php');
                     <h2 class="text-white font-weight-bold mb-2 mt-lg-0 mt-md-0 mt-sm-2 mt-2">Featured Speaker</h2>
                     <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
                     <div class="mt-4">
-                    <a href="#pablo" class="btn btn-primary btn-lg">Start Now</a>
+                    <a href="#pablo" class="btn btn-primary btn-lg btn-round">Start Now</a>
                     </div>
-                    <div class="cardContainer">
-                        <div class="cardBox">
-                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="">
-                            <h6 class="text-white text-center mt-1">Person Name</h6>
+                    <div class="swiper speakerSlider cardContainer">
+                        <div class=" swiper-wrapper">
+                            <div class=" swiper-slide">
+                                <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="">
+                                <h6 class="text-white text-center mt-1">Person Name</h6>
+                            </div>
+                            <div class=" swiper-slide">
+                                <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="">
+                                <h6 class="text-white text-center mt-1">Person Name</h6>
+                            </div>
+                            <div class=" swiper-slide">
+                                <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="">
+                                <h6 class="text-white text-center mt-1">Person Name</h6>
+                            </div>
+                            <div class=" swiper-slide">
+                                <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="">
+                                <h6 class="text-white text-center mt-1">Person Name</h6>
+                            </div>
+                            <div class=" swiper-slide">
+                                <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="">
+                                <h6 class="text-white text-center mt-1">Person Name</h6>
+                            </div>
+                            <div class=" swiper-slide">
+                                <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="">
+                                <h6 class="text-white text-center mt-1">Person Name</h6>
+                            </div>
                         </div>
-                        <div class="cardBox">
-                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="">
-                            <h6 class="text-white text-center mt-1">Person Name</h6>
-                        </div>
-                        <div class="cardBox">
-                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="">
-                            <h6 class="text-white text-center mt-1">Person Name</h6>
-                        </div>
-                        <div class="cardBox">
-                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="">
-                            <h6 class="text-white text-center mt-1">Person Name</h6>
+                        <div class="swiperButton">
+                            <div class="swiper-button-prev swiperBtn rounded-circle" data-background-color="black"></div>
+                            <div class="swiper-button-next swiperBtn rounded-circle" data-background-color="black"></div>
                         </div>
                     </div>
                 </div>
@@ -221,52 +243,59 @@ include get_theme_file_path('/public/tnc-header.php');
                     <span>Latest featured <span class="font-weight-bold">posts</span>...</span>
                 </div>
                 <div class="col-md-6 text-lg-right text-md-right text-sm-center text-center mt-lg-0 mt-md-0 mt-sm-2 mt-2">
-                    <a href="" class="text-info font-weight-bold mr-3"><< prev</a>
-                    <a href="" class="text-info font-weight-bold mx-1">1</a>
-                    <a href="" class="text-info font-weight-bold mx-1">2</a>
-                    <a href="" class="text-info font-weight-bold mx-1">3</a>
-                    <a href="" class="text-info font-weight-bold mx-1">4</a>
-                    <a href="" class="text-info font-weight-bold mx-1">5</a>
-                    <a href="" class="text-info font-weight-bold mx-1">6</a>
-                    <a href="" class="text-info font-weight-bold mx-1">7</a>
-                    <a href="" class="text-info font-weight-bold mx-1">8</a>
-                    <a href="" class="text-info font-weight-bold mx-1">9</a>
-                    <a href="" class="text-info font-weight-bold mx-1">10</a>
-                    <a href="" class="text-info font-weight-bold ml-3">next >></a>
+                <div class="pagination-container d-flex justify-content-end">
+                        <ul class="pagination pagination-primary">
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
+                            </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section class="homePageSlider padding-10">
-        <div class="container p-0">
-            <div class="slickSliderPost">
-                <div class="mx-2">
+    <section class="homePageSlider padding-10 ">
+        <div class="container p-0 swiperSliderOne">
+            <div class="slickSliderPost swiper-wrapper">
+                <div class="mx-2 swiper-slide">
                     <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 1">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
-                <div class="mx-2">
+                <div class="mx-2 swiper-slide">
                     <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 2">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
-                <div class="mx-2">
+                <div class="mx-2 swiper-slide">
                     <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 3">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
-                <div class="mx-2">
+                <div class="mx-2 swiper-slide">
                     <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 4">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
-                <div class="mx-2">
+                <div class="mx-2 swiper-slide">
                     <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 5">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
-                <div class="mx-2">
+                <div class="mx-2 swiper-slide">
                     <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 6">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
-                <div class="mx-2">
+                <div class="mx-2 swiper-slide">
                     <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 6">
                     <h6 class="text-center text-secondary mt-2">Post Title</h6>
                 </div>
@@ -283,7 +312,7 @@ include get_theme_file_path('/public/tnc-header.php');
                         <h2 class="mt-0 mb-2 font-weight-bold text-lg-left text-ms-left text-sm-center text-center">Download the App...</h2>
                         <p class="text-lg-left text-ms-left text-sm-center text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula.</p>
                         <div class="mt-md-4 text-lg-left text-ms-left text-sm-center text-center">
-                        <a href="#pablo" class="btn btn-primary btn-lg">Start Now</a>
+                        <a href="#pablo" class="btn btn-primary btn-lg btn-round">Start Now</a>
                         </div>
                     </div>
                 </div>
@@ -306,28 +335,49 @@ include get_theme_file_path('/public/tnc-footer.php');
 ?>
 
 <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      // keyboard:true,
-      // mouseWheel:true,
-      centeredSlides: true,
-      // loop:true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable:true
-      },
-      navigation:{
-        prevEl:'.swiper-button-prev',
-        nextEl:'.swiper-button-next'
-      }
-    });
+
+
+var swiper = new Swiper(".swiperSliderOne", {
+          spaceBetween: 10,
+          mousewheel: true,
+          keyboard: true,
+          cssMode:true,
+        //   loop:true,
+          speed:1000,
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                },
+                400: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                1200: {
+                    slidesPerView: 6,
+                },
+            },
+        });
+
+
+        var speakerSlider = new Swiper(".speakerSlider", {
+          spaceBetween: 10,
+          mousewheel: true,
+          keyboard: true,
+          cssMode:true,
+          slidesPerView: 4,
+          speed:1000,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+            
+        });
+
+
   </script>
