@@ -74,25 +74,25 @@ include get_theme_file_path('/public/tnc-header.php');
         <div class="container p-0">
             <div class="slickSlider">
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 1">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 1">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 2">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 2">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 3">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 3">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 4">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 4">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 5">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 5">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 6">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 6">
                 </div>
                 <div class="mx-2">
-                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg28.jpg" alt="Image 6">
+                    <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="Image 6">
                 </div>
             </div>
         </div>
@@ -157,19 +157,19 @@ include get_theme_file_path('/public/tnc-header.php');
                     </div>
                     <div class="cardContainer">
                         <div class="cardBox">
-                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg" alt="">
+                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="">
                             <h6 class="text-white text-center mt-1">Person Name</h6>
                         </div>
                         <div class="cardBox">
-                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg" alt="">
+                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="">
                             <h6 class="text-white text-center mt-1">Person Name</h6>
                         </div>
                         <div class="cardBox">
-                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg" alt="">
+                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="">
                             <h6 class="text-white text-center mt-1">Person Name</h6>
                         </div>
                         <div class="cardBox">
-                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/images.jpg" alt="">
+                            <img class="rounded" src="<?php echo get_template_directory_uri() ?>/public/theme/images/ryan.jpg" alt="">
                             <h6 class="text-white text-center mt-1">Person Name</h6>
                         </div>
                     </div>
