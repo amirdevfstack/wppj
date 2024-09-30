@@ -13,7 +13,7 @@
       <div class="container">
          <div class="row pb-4">
             <div class="col-md-6 px-0 d-flex flex-column justify-content-end align-items-lg-start align-items-md-start align-items-sm-center align-items-center">
-               <h1 class="m-0 font-weight-bold text-white">Love is Contagious</h1>
+               <h1 class="m-0 font-weight-bold text-white text-lg-left text-md-left text-sm-start text-center">Love is Contagious</h1>
                <h4 class="font-weight-bold my-0 text-white">Love is Infectious</h4>
                <div class="mt-4">
                   <a href="#pablo" class="btn btn-primary btn-lg btn-round">Start Now</a>
@@ -84,7 +84,10 @@
                <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 6">
             </div>
          </div>
-      </div>
+        </div>
+        <hr class="border border-secondary" width="300">
+        <div class="swiper-pagination firstSwiperPagination"></div>
+        <hr class="border border-secondary" width="300">
    </section>
    <section class="featuredSection padding-common marginTop">
       <div class="container p-0">
@@ -296,8 +299,20 @@
              mousewheel: true,
              keyboard: true,
              cssMode:true,
-           //   loop:true,
+             loop:true,
              speed:1000,
+             autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false
+                },
+             pagination: {
+               el: ".swiper-pagination",
+               clickable: true,
+             },
+             navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+            },
                breakpoints: {
                    320: {
                        slidesPerView: 2,
@@ -321,6 +336,7 @@
              keyboard: true,
              cssMode:true,
              slidesPerView: 4,
+             loop:true,
              speed:1000,
              pagination: {
                el: ".swiper-pagination",

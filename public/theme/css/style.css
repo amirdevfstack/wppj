@@ -1,6 +1,6 @@
 
-.singUpContainer form input::placeholder {
-    color: gray !important;
+input::placeholder {
+    color: #7f7c7c !important;
 }
 .signupBgImage::before {
     content: '';
@@ -12,23 +12,33 @@
     background: linear-gradient(0deg, rgba(44, 44, 44, .2), rgba(0, 0, 0, .7));
     z-index: 1;
 }
-.signupBgImage, .singUpContainer  {
+.firstCol .info {
+    padding: 0px 0 30px;
+}
+/* .signupBgImage, .singUpContainer  {
     position: relative;
     z-index: 2;
-}
+} */
 
-.signupIcon i, .footerIcon i {
+/* .signupIcon i, .footerIcon i {
     font-size: 24px;
   }
 .signupIcon a:hover, .footerIcon a:hover {
     text-decoration: none !important;
-  }
+  } */
 
 
 /* Home Page  */
 
 .firstHomeContainer .row{
     padding-top: 500px;
+}
+.homePageSlider  .firstSwiperPagination{
+    position: relative;
+    top: 0px !important;
+}
+.homePageSlider  .firstSwiperPagination .swiper-pagination-bullet{
+    margin-inline: 10px !important;
 }
 .firstHomeContainer .videoPlay{
     width: 500px;
