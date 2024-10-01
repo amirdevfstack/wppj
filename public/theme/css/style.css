@@ -2,15 +2,17 @@
 input::placeholder {
     color: #7f7c7c !important;
 }
-.signupBgImage::before {
+.signupBgImage::before, .swiperSliderOne .blogDiv::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(0deg, rgba(44, 44, 44, .2), rgba(0, 0, 0, .7));
+    background: linear-gradient(0deg, rgba(44, 44, 44, .9), rgba(0, 0, 0, .7));
     z-index: 1;
+    border: inherit;
+    border-radius: inherit;
 }
 .firstCol .info {
     padding: 0px 0 30px;
@@ -37,6 +39,15 @@ input::placeholder {
     position: relative;
     top: 0px !important;
 }
+.blogDiv {
+    position: relative;
+}
+.blogDetail {
+    position: absolute;
+    bottom: 25px;
+    z-index: 2;
+    /* left: 10px; */
+  }
 .homePageSlider  .firstSwiperPagination .swiper-pagination-bullet{
     margin-inline: 10px !important;
 }

@@ -62,29 +62,78 @@
    <section class="homePageSlider padding-10">
       <div class="container p-0 swiper swiperSliderOne">
          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide rounded border border-secondary blogDiv">
                <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 1">
+               <div class="blogDetail w-100 px-2">
+                  <h4 class="m-0 text-white font-weight-bold">Event Name</h4>
+                  <div class="d-flex justify-content-between">
+                     <h5 class="m-0 txt-white">MONTH XX</h5>
+                     <h5 class="m-0 txt-white">XX EST</h5>
+                  </div>
+               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide rounded border border-secondary blogDiv">
                <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 2">
+               <div class="blogDetail w-100 px-2">
+                  <h4 class="m-0 text-white font-weight-bold">Event Name</h4>
+                  <div class="d-flex justify-content-between">
+                     <h5 class="m-0 txt-white">MONTH XX</h5>
+                     <h5 class="m-0 txt-white">XX EST</h5>
+                  </div>
+               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide rounded border border-secondary blogDiv">
                <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 3">
+                 <div class="blogDetail w-100 px-2">
+                  <h4 class="m-0 text-white font-weight-bold">Event Name</h4>
+                  <div class="d-flex justify-content-between">
+                     <h5 class="m-0 txt-white">MONTH XX</h5>
+                     <h5 class="m-0 txt-white">XX EST</h5>
+                  </div>
+               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide rounded border border-secondary blogDiv">
                <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 4">
+                 <div class="blogDetail w-100 px-2">
+                  <h4 class="m-0 text-white font-weight-bold">Event Name</h4>
+                  <div class="d-flex justify-content-between">
+                     <h5 class="m-0 txt-white">MONTH XX</h5>
+                     <h5 class="m-0 txt-white">XX EST</h5>
+                  </div>
+               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide rounded border border-secondary blogDiv">
                <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 5">
+                 <div class="blogDetail w-100 px-2">
+                  <h4 class="m-0 text-white font-weight-bold">Event Name</h4>
+                  <div class="d-flex justify-content-between">
+                     <h5 class="m-0 txt-white">MONTH XX</h5>
+                     <h5 class="m-0 txt-white">XX EST</h5>
+                  </div>
+               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide rounded border border-secondary blogDiv">
                <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 6">
+                 <div class="blogDetail w-100 px-2">
+                  <h4 class="m-0 text-white font-weight-bold">Event Name</h4>
+                  <div class="d-flex justify-content-between">
+                     <h5 class="m-0 txt-white">MONTH XX</h5>
+                     <h5 class="m-0 txt-white">XX EST</h5>
+                  </div>
+               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide rounded border border-secondary blogDiv">
                <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/james.jpg" alt="Image 6">
+                 <div class="blogDetail w-100 px-2">
+                  <h4 class="m-0 text-white font-weight-bold">Event Name</h4>
+                  <div class="d-flex justify-content-between">
+                     <h5 class="m-0 txt-white">MONTH XX</h5>
+                     <h5 class="m-0 txt-white">XX EST</h5>
+                  </div>
+               </div>
             </div>
          </div>
-        </div>
+        </div>                 
         <hr class="border border-secondary" width="300">
         <div class="swiper-pagination firstSwiperPagination"></div>
         <hr class="border border-secondary" width="300">
@@ -159,7 +208,7 @@
                   background-repeat:no-repeat;
                   background-size: cover;
                   background-position:center center;">
-                  <div class="featuredContent">
+                  <div class="featuredContent px-3">
                      <h4 class="mb-1 mt-0 text-white">Featured Quote</h4>
                      <p class="text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis, elit quis egestas rhoncus, lacus erat ultricies turpis, in hendrerit erat lectus quis est. Phasellus aliquet et nibh vitae cursus. Integer iaculis tempus ipsum et ultricies. Sed faucibus ex nibh, non laoreet velit tempor et. Curabitur luctus cursus lectus sed condimentum. Donec tincidunt mi a dui volutpat, eu gravida sem tempor. Suspendisse aliquam volutpat vehicula."</p>
                   </div>
@@ -241,31 +290,73 @@
       <div class="container p-0 swiperSliderOne">
          <div class="slickSliderPost swiper-wrapper">
             <div class="mx-2 swiper-slide">
-               <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 1">
+               <div class="blogDiv rounded border border-secondary">
+                  <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 1">
+                  <div class="blogDetail px-2">
+                     <h4 class="m-0 text-white font-weight-bold">Blog Title</h4>
+                     <h5 class="m-0 txt-white">BLOG DATE</h5>
+                  </div>
+               </div>
                <h6 class="text-center text-secondary mt-2">Post Title</h6>
             </div>
             <div class="mx-2 swiper-slide">
-               <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 2">
+            <div class="blogDiv rounded border border-secondary">
+                  <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 1">
+                  <div class="blogDetail px-2">
+                     <h4 class="m-0 text-white font-weight-bold">Blog Title</h4>
+                     <h5 class="m-0 txt-white">BLOG DATE</h5>
+                  </div>
+               </div>
                <h6 class="text-center text-secondary mt-2">Post Title</h6>
             </div>
             <div class="mx-2 swiper-slide">
-               <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 3">
+            <div class="blogDiv rounded border border-secondary">
+                  <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 1">
+                  <div class="blogDetail px-2">
+                     <h4 class="m-0 text-white font-weight-bold">Blog Title</h4>
+                     <h5 class="m-0 txt-white">BLOG DATE</h5>
+                  </div>
+               </div>
                <h6 class="text-center text-secondary mt-2">Post Title</h6>
             </div>
             <div class="mx-2 swiper-slide">
-               <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 4">
+            <div class="blogDiv rounded border border-secondary">
+                  <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 1">
+                  <div class="blogDetail px-2">
+                     <h4 class="m-0 text-white font-weight-bold">Blog Title</h4>
+                     <h5 class="m-0 txt-white">BLOG DATE</h5>
+                  </div>
+               </div>
                <h6 class="text-center text-secondary mt-2">Post Title</h6>
             </div>
             <div class="mx-2 swiper-slide">
-               <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 5">
+            <div class="blogDiv rounded border border-secondary">
+                  <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 1">
+                  <div class="blogDetail px-2">
+                     <h4 class="m-0 text-white font-weight-bold">Blog Title</h4>
+                     <h5 class="m-0 txt-white">BLOG DATE</h5>
+                  </div>
+               </div>
                <h6 class="text-center text-secondary mt-2">Post Title</h6>
             </div>
             <div class="mx-2 swiper-slide">
-               <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 6">
+            <div class="blogDiv rounded border border-secondary">
+                  <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 1">
+                  <div class="blogDetail px-2">
+                     <h4 class="m-0 text-white font-weight-bold">Blog Title</h4>
+                     <h5 class="m-0 txt-white">BLOG DATE</h5>
+                  </div>
+               </div>
                <h6 class="text-center text-secondary mt-2">Post Title</h6>
             </div>
             <div class="mx-2 swiper-slide">
-               <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 6">
+            <div class="blogDiv rounded border border-secondary">
+                  <img class="rounded border border-secondary" src="<?php echo get_template_directory_uri() ?>/public/theme/images/bg24.jpg" alt="Image 1">
+                  <div class="blogDetail px-2">
+                     <h4 class="m-0 text-white font-weight-bold">Blog Title</h4>
+                     <h5 class="m-0 txt-white">BLOG DATE</h5>
+                  </div>
+               </div>
                <h6 class="text-center text-secondary mt-2">Post Title</h6>
             </div>
          </div>
@@ -301,10 +392,10 @@
              cssMode:true,
              loop:true,
              speed:1000,
-             autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false
-                },
+            //  autoplay: {
+            //         delay: 2000,
+            //         disableOnInteraction: false
+            //     },
              pagination: {
                el: ".swiper-pagination",
                clickable: true,
