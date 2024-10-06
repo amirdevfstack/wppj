@@ -1,143 +1,126 @@
 jQuery(document).ready(function($) {
- 
-    function openMediaUploader(button) {
-        var frame = wp.media({
-            title: 'Select or Upload Media',
-            button: {
-                text: 'Use this media'
-            },
-            multiple: false
-        });
-        frame.on('select', function() {
-            var attachment = frame.state().get('selection').first().toJSON();
-            var imageUrl = attachment.url;
-            var inputId = button.data('input-id'); 
-            var previewId = button.data('preview-id');
-            $('#' + inputId).val(imageUrl);
-            $('#' + previewId).html('<img src="' + imageUrl + '" style="max-width: 200px; max-height: 200px;">');
-			$(button).next(".remove_upload_image_button_header").remove();
-			$(button).after("<input type='button' class='button remove_upload_image_button_header' data-input='"+inputId+"' value='Remove image' style='margin-bottom:10px; margin-left:10px;color:red'/>")
-        });
+    // Limit for links, social feeds, and social icons
+    var maxLinks = 5;
+    var maxSocialFeeds = 3;
+    var maxSocialIcons = 5;
 
-        frame.open();
-    }
-    $(document).on('click', '.footer-image-upload-button', function(e) {
+    // Add new link field (About Us and Market Links)
+    $('.add-link').on('click', function(e) {
         e.preventDefault();
-        var button = $(this);
-        openMediaUploader(button);
-    });
-    // Gurpreet Singh js start
-    // For '.remove_upload_image_button' elements
-jQuery(document).on('click', '.remove_upload_image_button', function() {
-    var data_input = jQuery(this).attr("data-input");
-    console.log('#preview_'+data_input+' img');
-    jQuery('#preview_'+data_input+' img').remove();
-    jQuery('#'+data_input).val("");
-    jQuery(this).hide();
-});
+        var wrapper = $(this).closest('.repeatable-links-wrapper');
+        var index = wrapper.find('.repeatable-link-row').length;
 
-// For '.remove_upload_image_button_header' elements
-jQuery(document).on('click', '.remove_upload_image_button_header', function() {
-    var data_input = jQuery(this).attr("data-input");
-    console.log('#'+data_input+'_preview img');
-    jQuery('#'+data_input+'_preview img').remove();
-    jQuery('#'+data_input).val("");
-    jQuery(this).hide();
-});
+        if (index >= maxLinks) {
+            alert('You can only add up to ' + maxLinks + ' links.');
+            return;
+        }
 
-jQuery(document).on('click', '.remove_slider_upload_image_button', function() {
-    var data_input = jQuery(this).attr("data-input");
-    jQuery("img[data-value='" + data_input + "']").remove();
+        // Remove the "Add Link" button temporarily
+        var addButton = $(this).detach();
 
-    console.log('.image-preview.' + data_input);
-    var inputFieldSelector = "input[name='" + data_input + "']";
-    jQuery(inputFieldSelector).val('');
-    jQuery(this).hide();
-});
+        // Create the new field with dynamic indexes for About Us or Market
+        var section = $(this).data('section'); // Dynamically differentiate sections (about_us_links, market_links)
+        var newField = `<div class="repeatable-link-row">
+                          <input type="text" class="regular-text" name="footer_customization_options[${section}][${index}][label]" value="" placeholder="Link Label" />
+                          <input type="url" class="regular-text" name="footer_customization_options[${section}][${index}][url]" value="" placeholder="Link URL" />
+                          <button type="button" class="remove-link button">Remove</button>
+                        </div>`;
 
-// jQuery('.cst_getlang_lat').on('click',function(){
-//   var street = $('input[name="business_listings_data[0][street]"]').val();
-// var street2 = $('input[name="business_listings_data[0][street2]"]').val();
-// var city = $('input[name="business_listings_data[0][city]"]').val();
-//     var state = $('input[name="business_listings_data[0][state]"]').val();
-//     var countryValue = $('input[name="business_listings_data[0][country]"]').val();
-//     var postal_code = $('input[name="business_listings_data[0][postal_code]"]').val();
-
-//     var adderss= street + " " +street2 + " "  + city+  " " + state+ " "  + countryValue;
-    
-
-// var encodedAddress = encodeURIComponent(adderss);
-// console.log(encodedAddress);
-// // Construct the URL
-// var url = `https://maps.googleapis.com/maps/api/geocode/json?address=`+encodedAddress+`&key=AIzaSyDvVpM5D9iQR6Q89DPhlUBVZGvlW75aBac`;
-
-// // Make the API request using fetch
-// fetch(url)
-//     .then(response => {
-//         // Check if the response is successful (status 200)
-//         if (!response.ok) {
-//             throw new Error('Network response was not ok');
-//         }
-//         // Parse JSON response
-//         return response.json();
-//     })
-//     .then(data => {
-//         var latitude = data.results[0].geometry.location.lat;
-//         $('.cst_lat').val(latitude);
-// var longitude = data.results[0].geometry.location.lng;
-//  $('.cst_long').val(longitude);
-// // console.log(longitude+"  "+latitude);
-
-//     })
-//     .catch(error => {
-//         // Handle errors
-//         console.error('There was a problem with the fetch operation:', error);
-//     });
-// });
-
- jQuery(document).on('input', '#country, #state', function() {
-        jQuery('#latitude').val('');
-     jQuery('#longitude').val('');
+        // Append the new field and then re-append the "Add Link" button at the bottom
+        wrapper.append(newField).append(addButton);
     });
 
- jQuery(document).on('input', '.cst_state, .cst_country', function() {
-       var index=jQuery(this).attr('data-index');
-     console.log(index);
-    jQuery('input[name="business_listings_data['+index+'][latitude]"]').val('');
-     jQuery('input[name="business_listings_data['+index+'][longitude]"]').val('');
+    // Remove link field (About Us and Market Links)
+    $(document).on('click', '.remove-link', function(e) {
+        e.preventDefault();
+        var wrapper = $(this).closest('.repeatable-links-wrapper');
+        var index = wrapper.find('.repeatable-link-row').length;
+
+        // Prevent deletion if there is only one field left
+        if (index === 1) {
+            alert('You must have at least one link.');
+            return;
+        }
+
+        $(this).closest('.repeatable-link-row').remove();
     });
 
- jQuery(document).on('input', '#location_address', function() {
-         jQuery('#latitude').val('');
-      jQuery('#longitude').val('');
-     });
-     jQuery(document).on('input', '#location_address', function() {
-        var address=jQuery('#location_address').val();
-        var encodedAddress = encodeURIComponent(address);
-   
-   var url = `https://maps.googleapis.com/maps/api/geocode/json?address=`+encodedAddress+`&key=AIzaSyDvVpM5D9iQR6Q89DPhlUBVZGvlW75aBac`;
-   
-   // Make the API request using fetch
-   fetch(url)
-       .then(response => {
-           // Check if the response is successful (status 200)
-           if (!response.ok) {
-               throw new Error('Network response was not ok');
-           }
-           // Parse JSON response
-           return response.json();
-       })
-       .then(data => {
-           var latitude = data.results[0].geometry.location.lat;
-           jQuery('#latitude').val(latitude);
-   var longitude = data.results[0].geometry.location.lng;
-    jQuery('#longitude').val(longitude);
-       })
-       .catch(error => {
-           // Handle errors
-           console.error('There was a problem with the fetch operation:', error);
-       });
-       });
- 
-    // Gurpreet Singh js end
+    // Add new text field (Social Feed)
+    $('.add-text').on('click', function(e) {
+        e.preventDefault();
+        var wrapper = $(this).closest('.repeatable-text-wrapper');
+        var index = wrapper.find('.repeatable-text-row').length;
+
+        if (index >= maxSocialFeeds) {
+            alert('You can only add up to ' + maxSocialFeeds + ' social feeds.');
+            return;
+        }
+
+        // Remove the "Add Text" button temporarily
+        var addButton = $(this).detach();
+
+        // Create the new field with dynamic indexes
+        var newField = `<div class="repeatable-text-row">
+                          <input type="text" class="regular-text" name="footer_customization_options[social_feed][${index}]" value="" placeholder="Feed Text" />
+                          <button type="button" class="remove-text button">Remove</button>
+                        </div>`;
+
+        // Append the new field and then re-append the "Add Text" button at the bottom
+        wrapper.append(newField).append(addButton);
+    });
+
+    // Remove text field (Social Feed)
+    $(document).on('click', '.remove-text', function(e) {
+        e.preventDefault();
+        var wrapper = $(this).closest('.repeatable-text-wrapper');
+        var index = wrapper.find('.repeatable-text-row').length;
+
+        // Prevent deletion if there is only one field left
+        if (index === 1) {
+            alert('You must have at least one social feed.');
+            return;
+        }
+
+        $(this).closest('.repeatable-text-row').remove();
+    });
+
+    // Add new icon field (Social Media Icons)
+    $('.add-icon').on('click', function(e) {
+        e.preventDefault();
+        var wrapper = $(this).closest('.repeatable-social-icons-wrapper');
+        var index = wrapper.find('.repeatable-social-icon-row').length;
+
+        if (index >= maxSocialIcons) {
+            alert('You can only add up to ' + maxSocialIcons + ' social media icons.');
+            return;
+        }
+
+        // Remove the "Add Icon" button temporarily
+        var addButton = $(this).detach();
+
+        // Create the new field with dynamic indexes
+        var newField = `<div class="repeatable-social-icon-row">
+                          <input type="text" class="regular-text" name="footer_customization_options[social_icons][${index}][icon]" value="" placeholder="FontAwesome Icon Class (e.g., fa-twitter)" />
+                          <input type="url" class="regular-text" name="footer_customization_options[social_icons][${index}][url]" value="" placeholder="Social Media URL" />
+                          <button type="button" class="remove-icon button">Remove</button>
+                        </div>`;
+
+        // Append the new field and then re-append the "Add Icon" button at the bottom
+        wrapper.append(newField).append(addButton);
+    });
+
+    // Remove icon field (Social Media Icons)
+    $(document).on('click', '.remove-icon', function(e) {
+        e.preventDefault();
+        var wrapper = $(this).closest('.repeatable-social-icons-wrapper');
+        var index = wrapper.find('.repeatable-social-icon-row').length;
+
+        // Prevent deletion if there is only one field left
+        if (index === 1) {
+            alert('You must have at least one social media icon.');
+            return;
+        }
+
+        $(this).closest('.repeatable-social-icon-row').remove();
+    });
 });

@@ -33,44 +33,30 @@ $publicTransactions = new AccountTransaction();
 $publicAuthenticationForm = new PublicAuthenticationForm();
 
 // Pull All Admin Classes
-// Admin
 require_once get_template_directory() . '/component/component-admin.php';
 require_once get_template_directory() . '/admin/business-admin.php';
-require_once get_template_directory() . '/admin/verification-admin.php';
-require_once get_template_directory() . '/admin/header-admin.php';
-require_once get_template_directory() . '/admin/footer-admin.php';
 require_once get_template_directory() . '/admin/authenticate-admin.php';
 require_once get_template_directory() . '/admin/event-admin.php';
 require_once get_template_directory() . '/admin/theme-admin.php';
+// Include the HomePage Customization Class
+require_once get_template_directory() . '/admin/homepage-customization-admin.php';
+require_once get_template_directory() . '/admin/feature-admin.php';
+require_once get_template_directory() . '/admin/center-hero-admin.php';
+require_once get_template_directory() . '/admin/download-app-admin.php';
+require_once get_template_directory() . '/admin/footer-admin.php';
 
 $adminComponent = new AdminComponents('AIzaSyDvVpM5D9iQR6Q89DPhlUBVZGvlW75aBac');
 $businessAdmin = new BusinessAdmin($adminComponent);
-$verificationAdmin = new VerificationAdmin($adminComponent);
-$headerAdmin = new HeaderAdmin($adminComponent);
-$footerAdmin = new FooterAdmin($adminComponent);
+
 $authenticateAdmin = new AuthenticateAdmin($adminComponent);
 $eventAdmin = new EventAdmin($adminComponent);
 $themeAdmin = new ThemeColorCustomizer($adminComponent);
+// Instantiate the HomePage Customization 
+$homePageAdmin = new HomePageCustomizationAdmin();
+$featureSectionAdmin = new FeatureSectionAdmin();
+$centerHeroAdmin = new CenterHeroSectionAdmin();
+$downloadappSectionAdmin = new DownloadAppSectionAdmin();
+$footerAdmin = new FooterCustomizationAdmin();
 
-function enqueue_authenticate_admin_styles() {
-    // Enqueue CSS only on the authenticate section page
-    $screen = get_current_screen();
-    if ($screen->id === 'business-info_page_authenticate-section') {
-        wp_enqueue_style('authenticate-admin-css', get_template_directory_uri() . '/path/to/your/css/file.css');
-    }
-}
-add_action('admin_enqueue_scripts', 'enqueue_authenticate_admin_styles');
-function enqueue_slick_carousel_assets() {
-    wp_deregister_script('jquery');
-    wp_register_script(
-        'jquery','https://code.jquery.com/jquery-3.6.0.min.js', array(), null, true);
-    wp_enqueue_script('jquery'); 
-    wp_enqueue_style(
-        'slick-carousel-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), null);
-    wp_enqueue_script(
-        'slick-carousel-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), null, true);
-          wp_enqueue_script('jquery-ui','https://code.jquery.com/ui/1.12.1/jquery-ui.js', array('jquery'), null, true);
-        wp_enqueue_style('jquery-ui-css','https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css', array(), null);
-}
-add_action('wp_enqueue_scripts', 'enqueue_slick_carousel_assets');
+
 
