@@ -73,7 +73,6 @@ input::placeholder {
 .swiper-button-next::after, .swiper-button-prev::after {
     font-size: 15px !important;
     font-weight: bold;
-    /* margin-top: 11px; */
   }
   .cardContainer .swiper-button-prev {
     left: 90%;

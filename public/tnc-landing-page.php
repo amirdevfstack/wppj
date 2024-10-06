@@ -46,7 +46,7 @@
       </div>
    </section>
 
-   <section class="homePageSlider padding-10">
+   <section class="homePageSlider padding-10 swiperSliderOneMain">
       <div class="container p-0 swiper swiperSliderOne">
          <div class="swiper-wrapper">
             <div class="swiper-slide rounded border border-secondary blogDiv">
@@ -220,7 +220,7 @@
    </section>
 
    <section class="homePageSlider padding-10 ">
-      <div class="container p-0 swiperSliderOne">
+      <div class="container p-0 swiperSliderTwo">
          <div class="slickSliderPost swiper-wrapper">
             <div class="mx-2 swiper-slide">
                <div class="blogDiv rounded border border-secondary">
@@ -307,7 +307,8 @@
    include get_theme_file_path('/public/tnc-footer.php');
 ?>
 <script>
-   var swiper = new Swiper(".swiperSliderOne", {
+ 
+   var swiperOne = new Swiper(".swiperSliderOne", {
              spaceBetween: 10,
              mousewheel: true,
              keyboard: true,
@@ -319,12 +320,12 @@
             //         disableOnInteraction: false
             //     },
              pagination: {
-               el: ".swiper-pagination",
+               el: ".swiperSliderOneMain .swiper-pagination",
                clickable: true,
              },
              navigation: {
-               nextEl: ".swiper-button-next",
-               prevEl: ".swiper-button-prev",
+               nextEl: ".swiperSliderOneMain .swiper-button-next",
+               prevEl: ".swiperSliderOneMain .swiper-button-prev",
             },
                breakpoints: {
                    320: {
@@ -342,6 +343,40 @@
                },
            });
    
+           var swiperTwo = new Swiper(".swiperSliderTwo", {
+             spaceBetween: 10,
+             mousewheel: true,
+             keyboard: true,
+             cssMode:true,
+             loop:true,
+             speed:1000,
+            //  autoplay: {
+            //         delay: 2000,
+            //         disableOnInteraction: false
+            //     },
+             pagination: {
+               el: ".swiperSliderTwo .swiper-pagination",
+               clickable: true,
+             },
+             navigation: {
+               nextEl: ".swiperSliderTwo .swiper-button-next",
+               prevEl: ".swiperSliderTwo .swiper-button-prev",
+            },
+               breakpoints: {
+                   320: {
+                       slidesPerView: 2,
+                   },
+                   400: {
+                       slidesPerView: 2,
+                   },
+                   768: {
+                       slidesPerView: 4,
+                   },
+                   1200: {
+                       slidesPerView: 6,
+                   },
+               },
+           });
    
            var speakerSlider = new Swiper(".speakerSlider", {
              spaceBetween: 10,
@@ -352,12 +387,12 @@
              loop:true,
              speed:1000,
              pagination: {
-               el: ".swiper-pagination",
+               el: ".speakerSlider .swiper-pagination",
                clickable: true,
              },
              navigation: {
-               nextEl: ".swiper-button-next",
-               prevEl: ".swiper-button-prev",
+               nextEl: ".speakerSlider .swiper-button-next",
+               prevEl: ".speakerSlider .swiper-button-prev",
            },
                
            });
